@@ -27,8 +27,36 @@ set TEXT_FILE=%PROJECT_NAME%.text
 set DST_FILE=%~n0
 set DST_FILE=%DST_FILE:~0,-3%
 
+:: Locate the arm-none-eabi tools.
+::
+:: uVision runs this script without the GNU toolchain on PATH, which used to
+:: abort the whole script at the objcopy line below. Fall back to the standard
+:: installer location instead of failing. Labels are used rather than an if
+:: block because %ProgramFiles(x86)% contains parentheses, which batch cannot
+:: parse inside a parenthesised block.
+set "GCCBIN="
+set "PF86=%ProgramFiles(x86)%"
+set "PF64=%ProgramFiles%"
+where arm-none-eabi-objcopy.exe >nul 2>nul
+if %ERRORLEVEL% equ 0 goto GCC_DONE
+for /d %%D in ("%PF86%\Arm GNU Toolchain arm-none-eabi\*") do if exist "%%D\bin\arm-none-eabi-objcopy.exe" set "GCCBIN=%%D\bin\"
+for /d %%D in ("%PF64%\Arm GNU Toolchain arm-none-eabi\*") do if exist "%%D\bin\arm-none-eabi-objcopy.exe" set "GCCBIN=%%D\bin\"
+if not defined GCCBIN echo "arm-none-eabi tools not found on PATH or in Program Files"
+:GCC_DONE
+
+:: Publish the flashable image first. uVision has already produced the .hex by
+:: now, so this must not depend on the objcopy and objdump steps below. When it
+:: did, a missing objcopy silently left hex\ holding a stale build.
+copy /y "%PROJECT_NAME%.hex" ..\..\hex\%DST_FILE%.hex
+if %ERRORLEVEL% neq 0 (
+    echo "Copy hex error"
+    goto PROC_ERR
+) else (
+    echo "Copy hex success!"
+)
+
 ::generate bin
-arm-none-eabi-objcopy.exe -O binary "%ELF_FILE%" "%BIN_FILE%"
+"%GCCBIN%arm-none-eabi-objcopy.exe" -O binary "%ELF_FILE%" "%BIN_FILE%"
 if %ERRORLEVEL% neq 0 (
     echo "Make bin error"
     goto PROC_ERR
@@ -37,7 +65,7 @@ if %ERRORLEVEL% neq 0 (
 )
 
 ::generate text
-arm-none-eabi-objdump.exe -S "%1.elf"  > "%1.text"
+"%GCCBIN%arm-none-eabi-objdump.exe" -S "%1.elf"  > "%1.text"
 if %ERRORLEVEL% neq 0 (
     echo "Make text error"
     goto PROC_ERR
@@ -45,6 +73,13 @@ if %ERRORLEVEL% neq 0 (
     echo "Make text success!"
 )
 
-copy /y %PROJECT_NAME%.hex ..\..\hex\%DST_FILE%.hex
+echo "Make done!"
 
-::pause
+::succeed
+exit /b 0
+
+:PARAM_ERR
+exit /b 1
+
+:PROC_ERR
+exit /b 2

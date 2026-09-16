@@ -1,7 +1,15 @@
-./objects/app_main.o: app_main.c \
+./objects/app_main.o: app_main.c C:\Keil_v5\ARM\ARMCLANG\include\stdio.h \
+  C:\Keil_v5\ARM\ARMCLANG\include\stdint.h \
+  C:\Keil_v5\ARM\ARMCLANG\include\string.h \
+  C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h \
   ..\..\..\..\..\..\sources\drivers\ht32f675x5_r2\ht32\register\RegHT32F675x5.h \
   ..\..\..\..\..\..\sources\device\ht32f675x5\Include\ARMCM0plus.h \
   ..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\Include\core_cm0plus.h \
+  E:\Super_Smart_Racket_V2\third_party\CMSIS\5.7.0\CMSIS\Include\cmsis_version.h \
+  E:\Super_Smart_Racket_V2\third_party\CMSIS\5.7.0\CMSIS\Include\cmsis_compiler.h \
+  E:\Super_Smart_Racket_V2\third_party\CMSIS\5.7.0\CMSIS\Include\cmsis_armclang.h \
+  C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h \
+  C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h \
   ..\..\..\..\..\..\sources\device\ht32f675x5\Include\system_ARMCM0plus.h \
   ..\..\..\..\..\..\sources\drivers\ht32f675x5_r2\ht32\register\reg_adc.h \
   ..\..\..\..\..\..\sources\drivers\ht32f675x5_r2\ht32\register\reg_adc_ana.h \
@@ -47,7 +55,9 @@
   ..\..\..\..\..\..\sources\projects_source\ble_examples\ble_peripheral\ht32f675x5_r2\ble\ble_peripheral\ble_peripheral.h \
   ble_trx_service_integrated.h \
   ..\..\..\..\..\..\sources\ble5.1\ht32f675x5_r2\ble_stack\stack\host_stack\stack_def.h \
+  C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h \
   ..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\RTX\Include\rtx_os.h \
+  C:\Keil_v5\ARM\ARMCLANG\include\stddef.h \
   ..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\Include\cmsis_os2.h \
   ..\..\..\..\..\..\sources\ble5.1\ht32f675x5_r2\ble_stack\stack\host_stack\gatt_service_api.h \
   ..\..\..\..\..\..\sources\patch\ht32f675x5_patch_lib_r2\patch_ble\stack\patch_gatt_service_api.h \

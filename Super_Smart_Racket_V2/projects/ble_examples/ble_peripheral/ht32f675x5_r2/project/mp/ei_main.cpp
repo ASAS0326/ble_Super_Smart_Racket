@@ -27,6 +27,8 @@ extern "C" {
 uint32_t app_millis(void);
 void app_led_toggle(void);
 void app_led_on(void);
+void app_led_off(void);
+void app_power_process(void);
 }
 
 #ifndef EI_UART_HANDLE
@@ -918,7 +920,16 @@ static void imu_init_loop(void)
 {
     while (!imu_i2c_dmp_init()) {
         app_led_toggle();
-        rom_delay_ms(200);
+
+        /*
+         * A dead IMU must not trap the user in a device that cannot be
+         * switched off, so keep servicing the power button here too.
+         * rom_delay_ms(200) is split up to keep the poll rate useful.
+         */
+        for (uint32_t i = 0U; i < 200U; i++) {
+            app_power_process();
+            rom_delay_ms(1);
+        }
     }
 
     app_led_on();
@@ -945,11 +956,16 @@ int ei_main(void)
     if (ei_init_result != 0) {
         for (;;) {
             app_led_toggle();
-            rom_delay_ms(200);
+
+            for (uint32_t i = 0U; i < 200U; i++) {
+                app_power_process();
+                rom_delay_ms(1);
+            }
         }
     }
 
     for (;;) {
         imu_ai_task();
+        app_power_process();
     }
 }

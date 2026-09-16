@@ -261,6 +261,40 @@
 //Wakeup LUT Index
 //=====================================================================================================================
 #define LUT_INDEX_CP_LLC                   (15)
+#define LUT_INDEX_PWR_BTN                  (2)
+
+
+//=====================================================================================================================
+// POWER BUTTON / SOFT SHUTDOWN
+//=====================================================================================================================
+// PWR_BTN = U8.22 = P44 = PB12 (GPIO_PORT_PWR_BTN / GPIO_PIN_PWR_BTN).
+//
+// BLE_RACKET_PRO_MAX-0701A wires the button between VBAT and PB12 with a
+// 100K pull-down, so the pin only reads HIGH while the button is held:
+//
+//   1 = pressed reads HIGH (button to VBAT, pin pulled down)
+//   0 = pressed reads LOW  (button to GND,  pin pulled up)
+//
+// This single switch selects the pin pull mode, the PMU wakeup polarity
+// and the pressed/released test together. Nothing else has to change if
+// a later board revision flips the button wiring.
+#define PWR_BTN_ACTIVE_HIGH                (1)
+
+// Hold time that powers the device off, and powers it back on.
+#define PWR_BTN_LONG_PRESS_MS              (2000U)
+
+// Contact bounce ignored while the button is being polled in run mode.
+#define PWR_BTN_DEBOUNCE_MS                (30U)
+
+// Debounce applied by the PMU wakeup path itself, unit 1 ms.
+#define PWR_BTN_WAKEUP_DEBOUNCE_MS         (2U)
+
+// Bring-up aid, 0 for a normal build. With this at 1 the MP runs
+// app_power_diag() in place of the application and never returns. It was
+// used to establish, on real hardware, that PB11 lights the LED when
+// driven low, that PB12 reads high when pressed, and that the status LED
+// needs the 1.8 V rail up before it responds at all.
+#define APP_PWR_DIAG_ENABLED               (0)
 
 
 #endif /* __APP_CFG_H__ */

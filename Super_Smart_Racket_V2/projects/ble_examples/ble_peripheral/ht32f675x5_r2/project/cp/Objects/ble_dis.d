@@ -1,5 +1,9 @@
 ./objects/ble_dis.o: \
   ..\..\..\..\..\..\sources\ble5.1\ht32f675x5_r2\ble_services\ble_dis\ble_dis.c \
+  C:\Keil_v5\ARM\ARMCLANG\include\stdio.h \
+  C:\Keil_v5\ARM\ARMCLANG\include\stdint.h \
+  C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h \
+  C:\Keil_v5\ARM\ARMCLANG\include\string.h \
   ..\..\..\..\..\..\sources\ble5.1\ht32f675x5_r2\ble_stack\stack\host_stack\bluetooth.h \
   ..\..\..\..\..\..\sources\components\ht32f675x5_r2\utility\err_def.h \
   ..\..\..\..\..\..\sources\ble5.1\ht32f675x5_r2\ble_stack\stack\host_stack\gatt_uuid_def.h \

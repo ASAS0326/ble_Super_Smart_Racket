@@ -1,12 +1,36 @@
 objects/err_debug.o: \
  ../../../../../../sources/components/ht32f675x5_r2/err_debug/err_debug.c \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\arm-none-eabi\include\stdio.h \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\arm-none-eabi\include\_ansi.h \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\arm-none-eabi\include\newlib.h \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\arm-none-eabi\include\_newlib_version.h \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\arm-none-eabi\include\sys\config.h \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\arm-none-eabi\include\machine\ieeefp.h \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\arm-none-eabi\include\sys\features.h \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\arm-none-eabi\include\sys\cdefs.h \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\arm-none-eabi\include\machine\_default_types.h \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\lib\gcc\arm-none-eabi\12.2.1\include\stddef.h \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\lib\gcc\arm-none-eabi\12.2.1\include\stdarg.h \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\arm-none-eabi\include\sys\reent.h \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\arm-none-eabi\include\_ansi.h \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\arm-none-eabi\include\sys\_types.h \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\arm-none-eabi\include\machine\_types.h \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\arm-none-eabi\include\sys\lock.h \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\arm-none-eabi\include\sys\stdio.h \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\lib\gcc\arm-none-eabi\12.2.1\include\stdint.h \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\arm-none-eabi\include\stdint.h \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\arm-none-eabi\include\sys\_intsup.h \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\arm-none-eabi\include\sys\_stdint.h \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\lib\gcc\arm-none-eabi\12.2.1\include\stdbool.h \
  ../../../../../../sources/drivers/ht32f675x5_r2/ht32/register/RegHT32F675x5.h \
  ../../../../../../sources/device/ht32f675x5/Include/ARMCM33_DSP_FP.h \
- C:/Users/corn9/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include/core_cm33.h \
- C:/Users/corn9/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include/cmsis_version.h \
- C:/Users/corn9/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include/cmsis_compiler.h \
- C:/Users/corn9/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include/cmsis_gcc.h \
- C:/Users/corn9/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include/m-profile/armv8m_mpu.h \
+ C:/Users/User/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include/core_cm33.h \
+ C:/Users/User/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include/cmsis_version.h \
+ C:/Users/User/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include/cmsis_compiler.h \
+ C:/Users/User/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include/cmsis_gcc.h \
+ c:\program\ files\ (x86)\arm\ gnu\ toolchain\ arm-none-eabi\12.2\ mpacbti-rel1\lib\gcc\arm-none-eabi\12.2.1\include\arm_acle.h \
+ C:/Users/User/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include/m-profile/cmsis_gcc_m.h \
+ C:/Users/User/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include/m-profile/armv8m_mpu.h \
  ../../../../../../sources/device/ht32f675x5/Include/system_ARMCM33.h \
  ../../../../../../sources/device/ht32f675x5/Include/system_ARMCM33.h \
  ../../../../../../sources/drivers/ht32f675x5_r2/ht32/register/reg_adc.h \
@@ -40,5 +64,5 @@ objects/err_debug.o: \
  ../../../../../../sources/components/ht32f675x5_r2/utility/err_def.h \
  ../../../../../../sources/drivers/ht32f675x5_r2/ht32/hw/inc/hw_wdt.h \
  ../../config/app_cfg.h \
- ../../config/..\..\..\..\..\sources\mem_cfg\ht32f675x5_mem_cfg_r2.h \
+ e:\super_smart_racket_v2\sources\mem_cfg\ht32f675x5_mem_cfg_r2.h \
  ../../../../../../sources/components/ht32f675x5_r2/rom_callback/rom_callback.h

@@ -5,7 +5,7 @@
 
   <Header>### uVision Project, (C) Keil Software</Header>
 
-  <WorkspaceName>WorkSpace</WorkspaceName>
+  <WorkspaceName>ble_peripheral</WorkspaceName>
 
   <project>
     <PathAndName>.\cp\ble_peripheral_cp.uvprojx</PathAndName>
@@ -15,6 +15,7 @@
   <project>
     <PathAndName>.\mp\ble_peripheral_mp.uvprojx</PathAndName>
     <NodeIsActive>1</NodeIsActive>
+    <NodeIsExpanded>1</NodeIsExpanded>
   </project>
 
 </ProjectWorkspace>

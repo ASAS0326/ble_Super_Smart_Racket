@@ -1,17 +1,26 @@
 ./objects/ble_host_init.o: \
   ..\..\..\..\..\..\sources\ble5.1\ht32f675x5_r2\ble_init\ble_host_init.c \
-  ..\..\config\app_cfg.h \
+  C:\Keil_v5\ARM\ARMCLANG\include\stdio.h \
+  C:\Keil_v5\ARM\ARMCLANG\include\stdint.h \
+  C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h \
+  C:\Keil_v5\ARM\ARMCLANG\include\string.h ..\..\config\app_cfg.h \
   ..\..\config\..\..\..\..\..\sources\mem_cfg\ht32f675x5_mem_cfg_r2.h \
   ..\..\config\ble_config.h \
   ..\..\..\..\..\..\sources\components\ht32f675x5_r2\mlog\mlog.h \
   ..\..\..\..\..\..\sources\components\ht32f675x5_r2\utility\err_def.h \
   ..\..\..\..\..\..\sources\components\ht32f675x5_r2\app_timer\app_timer.h \
   ..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\Include\cmsis_os2.h \
+  C:\Keil_v5\ARM\ARMCLANG\include\stddef.h \
   ..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h \
   ..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h \
   RTE\_ble_peripheral_cp\RTE_Components.h \
   ..\..\..\..\..\..\sources\device\ht32f675x5\Include\ARMCM0plus.h \
   ..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\Include\core_cm0plus.h \
+  E:\Super_Smart_Racket_V2\third_party\CMSIS\5.7.0\CMSIS\Include\cmsis_version.h \
+  E:\Super_Smart_Racket_V2\third_party\CMSIS\5.7.0\CMSIS\Include\cmsis_compiler.h \
+  E:\Super_Smart_Racket_V2\third_party\CMSIS\5.7.0\CMSIS\Include\cmsis_armclang.h \
+  C:\Keil_v5\ARM\ARMCLANG\include\arm_compat.h \
+  C:\Keil_v5\ARM\ARMCLANG\include\arm_acle.h \
   ..\..\..\..\..\..\sources\device\ht32f675x5\Include\system_ARMCM0plus.h \
   ..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h \
   ..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\Include\os_tick.h \
