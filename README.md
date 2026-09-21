@@ -1,6 +1,6 @@
 # 🏸 智慧球拍 Super Smart Racket
 
-一支裝有九軸慣性感測器（IMU）與雙核心 MCU 的智慧球拍，能即時辨識揮拍動作（切球／拉球／殺球，正手／反手），透過藍牙（BLE）把辨識結果送到手機 App 或網頁，即時顯示。
+一支裝有六軸慣性感測器（IMU）與雙核心 MCU 的智慧球拍，能即時辨識揮拍動作（切球／拉球／殺球，正手／反手），透過藍牙（BLE）把辨識結果送到手機 App 或網頁，即時顯示。
 
 - **MP（Main Processor）**：讀取 IMU 六軸原始資料 → 滑動視窗 → Edge Impulse 模型推論 → 把結果寫入雙核心共用記憶體
 - **CP（Communication Processor）**：從共用記憶體取出辨識結果 → 透過 BLE 傳送
@@ -63,6 +63,7 @@ ble_Super_Smart_Racket/
     │   └── Homemade_board/          # 自製 PCB（舊版，ICM-20948 九軸 + 手寫 CNN）
     │       └── ble_peripheral/
     ├── libraries/, sources/, third_party/, tools/   # Holtek HT32 SDK 底層庫與工具
+    
 ```
 
 ---
@@ -75,7 +76,7 @@ ble_Super_Smart_Racket/
 |---|---|---|
 | 開發板 | Holtek HT32F67595 官方開發板 | 自製 PCB |
 | IMU | LSM6DS3（6 軸：加速度＋陀螺儀） | ICM-20948（9 軸，含磁力計，但推論只用六軸） |
-| AI 推論 | Edge Impulse 匯出的 CMSIS pack（`EdgeImpulse.pinpon.*`） |
+| AI 推論 | Edge Impulse 匯出的 CMSIS pack（`EdgeImpulse.pinpon.*`） |Edge Impulse 匯出的 CMSIS pack（`EdgeImpulse.pinpon.*`） |
 | 韌體位置 | `Textbook_board/Racket_Firmware` | `Homemade_board/ble_peripheral` |
 
 Textbook_board 使用 Holtek HT32F675x5 雙核心架構：MP 負責感測器讀取與 AI 推論，CP 負責 BLE 傳輸，兩核心透過共用記憶體＋sequence lock 交換資料。
