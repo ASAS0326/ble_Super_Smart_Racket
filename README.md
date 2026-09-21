@@ -63,7 +63,7 @@ ble_Super_Smart_Racket/
     │   └── Homemade_board/          # 自製 PCB（舊版，ICM-20948 九軸 + 手寫 CNN）
     │       └── ble_peripheral/
     ├── libraries/, sources/, third_party/, tools/   # Holtek HT32 SDK 底層庫與工具
-    
+
 ```
 
 ---
@@ -87,11 +87,11 @@ Textbook_board 使用 Holtek HT32F675x5 雙核心架構：MP 負責感測器讀�
 
 | 代碼 | 中文名稱 |
 |---|---|
-| BC | 反手切球 |
-| BP | 反手拉球 |
+| BC | 反手切 |
+| BP | 反手拉 |
 | BS | 反手拍 |
-| FC | 正手切球 |
-| FP | 正手拉球 |
+| FC | 正手切 |
+| FP | 正手拉 |
 | FS | 正手拍 |
 | NONE | 無動作（不會顯示／不會傳送） |
 
