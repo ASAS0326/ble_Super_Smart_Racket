@@ -33,7 +33,7 @@ LSM6DS3 (IMU)
 
 ### 🌐 網頁版接收端
 
-[`index.html`](index.html) 是不需要安裝 App、直接用瀏覽器透過 **Web Bluetooth** 連線球拍的接收頁面。
+[`index.html`](https://asas0326.github.io/holtek_Super_Smart_Racket/) 是不需要安裝 App、直接用瀏覽器透過 **Web Bluetooth** 連線球拍的接收頁面。
 
 - 需要支援 Web Bluetooth 的瀏覽器（Chrome / Edge，桌機或 Android 皆可；iOS Safari 不支援 Web Bluetooth）
 - 用瀏覽器打開 `index.html`（或啟用本 repo 的 GitHub Pages 後直接用網址開啟），按「連接 BLE」即可
@@ -41,7 +41,9 @@ LSM6DS3 (IMU)
 
 ### 📖 使用手冊
 
-完整圖文教學請見 [`Super_Smart_Racket使用手冊.pptx`](<Super_Smart_Racket使用手冊 .pptx>)。
+Homemade_board完整圖文教學請見 [`Homemade_board使用手冊.pptx`](<Super_Smart_Racket使用手冊 .pptx>)。
+
+Textbook_board完整圖文教學請見 [Textbook_board使用手冊.pptx`](<Textbook_board使用手冊 .pptx>)。
 
 ---
 
@@ -73,7 +75,7 @@ ble_Super_Smart_Racket/
 |---|---|---|
 | 開發板 | Holtek HT32F67595 官方開發板 | 自製 PCB |
 | IMU | LSM6DS3（6 軸：加速度＋陀螺儀） | ICM-20948（9 軸，含磁力計，但推論只用六軸） |
-| AI 推論 | Edge Impulse 匯出的 CMSIS pack（`EdgeImpulse.pinpon.*`） | 手寫 `cnn32x6` 神經網路 |
+| AI 推論 | Edge Impulse 匯出的 CMSIS pack（`EdgeImpulse.pinpon.*`） |
 | 韌體位置 | `Textbook_board/Racket_Firmware` | `Homemade_board/ble_peripheral` |
 
 Textbook_board 使用 Holtek HT32F675x5 雙核心架構：MP 負責感測器讀取與 AI 推論，CP 負責 BLE 傳輸，兩核心透過共用記憶體＋sequence lock 交換資料。
@@ -86,10 +88,10 @@ Textbook_board 使用 Holtek HT32F675x5 雙核心架構：MP 負責感測器讀�
 |---|---|
 | BC | 反手切球 |
 | BP | 反手拉球 |
-| BS | 反手殺球 |
+| BS | 反手拍 |
 | FC | 正手切球 |
 | FP | 正手拉球 |
-| FS | 正手殺球 |
+| FS | 正手拍 |
 | NONE | 無動作（不會顯示／不會傳送） |
 
 模型為 [Edge Impulse](https://edgeimpulse.com/) 專案（project id `1111023`），輸入為六軸（Ax, Ay, Az, Gx, Gy, Gz）滑動視窗，int8 量化、內建 StandardScaler 正規化。事件判定採「V2 event boundaries」：以連續視窗的加權投票決定一次揮拍的最終分類，並有回拍（follow-through）閘門，避免收拍動作被誤判成下一次揮拍。
@@ -131,15 +133,4 @@ Textbook_board 使用 Holtek HT32F675x5 雙核心架構：MP 負責感測器讀�
 2. 把資料上傳到 Edge Impulse Studio，設定 Impulse 的 Window size／Frequency，訓練後以 **Keil CMSIS pack** 格式匯出。
 3. 安裝匯出的 pack、在 `Racket_Firmware` 的 Keil 專案裡把 RTE 的 pinpon 元件切到新版本，同步更新 `ei_main.cpp` 裡對應的 `static_assert`（`EI_CLASSIFIER_PROJECT_DEPLOY_VERSION`、`RAW_SAMPLE_COUNT`、`DSP_INPUT_FRAME_SIZE` 等），重新編譯燒錄。
 
----
 
-## 📄 授權
-
-尚未指定授權條款（License）。
-
----
-
-## 🙏 致謝
-
-- [Holtek HT32 SDK](https://mcu.holtek.com.tw/) — MCU 底層驅動與 BLE 協定堆疊
-- [Edge Impulse](https://edgeimpulse.com/) — Edge AI 模型訓練與部署
