@@ -60,7 +60,7 @@ ble_Super_Smart_Racket/
     │   ├── Textbook_board/          # 官方 HT32F67595 開發板（目前主力版本）
     │   │   ├── Racket_Firmware/     # 燒進球拍的正式韌體（MP+CP，LSM6DS3 + Edge Impulse）
     │   │   └── Data_collection/     # 訓練資料收集韌體 + Python 收集腳本
-    │   └── Homemade_board/          # 自製 PCB（舊版，ICM-20948 九軸 + 手寫 CNN）
+    │   └── Homemade_board/          # 自製 PCB（舊版，ICM-20948 九軸 +  Edge Impulse）
     │       └── ble_peripheral/
     └── libraries/, sources/, third_party/, tools/   # Holtek HT32 SDK 底層庫與工具
 ```
