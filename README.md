@@ -41,9 +41,8 @@ LSM6DS3 (IMU)
 
 ### 📖 使用手冊
 
-Homemade_board完整圖文教學請見 [`Homemade_board使用手冊.pptx`](<Super_Smart_Racket使用手冊 .pptx>)。
-
-Textbook_board完整圖文教學請見 [Textbook_board使用手冊.pptx`](<Textbook_board使用手冊 .pptx>)。
+- Homemade_board 完整圖文教學請見 [`Homemade_board使用手冊.pptx`](<Homemade_board使用手冊.pptx>)
+- Textbook_board 完整圖文教學請見 [`Textbook_board使用手冊.pptx`](<Textbook_board使用手冊.pptx>)
 
 ---
 
@@ -54,7 +53,8 @@ ble_Super_Smart_Racket/
 ├── index.html                      # 網頁版 BLE 接收頁（Web Bluetooth）
 ├── app-release.apk                 # Android App 安裝檔
 ├── apk.png                         # App 下載 QR Code
-├── Super_Smart_Racket使用手冊 .pptx  # 圖文使用手冊
+├── Homemade_board使用手冊.pptx      # Homemade_board 圖文使用手冊
+├── Textbook_board使用手冊.pptx      # Textbook_board 圖文使用手冊
 └── Super_Smart_Racket/              # 韌體與 SDK 原始碼
     ├── projects/
     │   ├── Textbook_board/          # 官方 HT32F67595 開發板（目前主力版本）
@@ -62,8 +62,7 @@ ble_Super_Smart_Racket/
     │   │   └── Data_collection/     # 訓練資料收集韌體 + Python 收集腳本
     │   └── Homemade_board/          # 自製 PCB（舊版，ICM-20948 九軸 + 手寫 CNN）
     │       └── ble_peripheral/
-    ├── libraries/, sources/, third_party/, tools/   # Holtek HT32 SDK 底層庫與工具
-
+    └── libraries/, sources/, third_party/, tools/   # Holtek HT32 SDK 底層庫與工具
 ```
 
 ---
@@ -76,7 +75,7 @@ ble_Super_Smart_Racket/
 |---|---|---|
 | 開發板 | Holtek HT32F67595 官方開發板 | 自製 PCB |
 | IMU | LSM6DS3（6 軸：加速度＋陀螺儀） | ICM-20948（9 軸，含磁力計，但推論只用六軸） |
-| AI 推論 | Edge Impulse 匯出的 CMSIS pack（`EdgeImpulse.pinpon.*`） |Edge Impulse 匯出的 CMSIS pack（`EdgeImpulse.pinpon.*`） |
+| AI 推論 | Edge Impulse 匯出的 CMSIS pack（`EdgeImpulse.pinpon.*`） | Edge Impulse 匯出的 CMSIS pack（`EdgeImpulse.pinpon.*`） |
 | 韌體位置 | `Textbook_board/Racket_Firmware` | `Homemade_board/ble_peripheral` |
 
 Textbook_board 使用 Holtek HT32F675x5 雙核心架構：MP 負責感測器讀取與 AI 推論，CP 負責 BLE 傳輸，兩核心透過共用記憶體＋sequence lock 交換資料。
@@ -133,5 +132,3 @@ Textbook_board 使用 Holtek HT32F675x5 雙核心架構：MP 負責感測器讀�
 1. 用 `Textbook_board/Data_collection` 底下的韌體＋`collect_training_data.py` 透過序列埠收集各動作類別的六軸資料（CSV）。
 2. 把資料上傳到 Edge Impulse Studio，設定 Impulse 的 Window size／Frequency，訓練後以 **Keil CMSIS pack** 格式匯出。
 3. 安裝匯出的 pack、在 `Racket_Firmware` 的 Keil 專案裡把 RTE 的 pinpon 元件切到新版本，同步更新 `ei_main.cpp` 裡對應的 `static_assert`（`EI_CLASSIFIER_PROJECT_DEPLOY_VERSION`、`RAW_SAMPLE_COUNT`、`DSP_INPUT_FRAME_SIZE` 等），重新編譯燒錄。
-
-
