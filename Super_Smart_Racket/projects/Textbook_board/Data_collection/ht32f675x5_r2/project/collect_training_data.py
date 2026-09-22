@@ -4,13 +4,13 @@ Press s to record one clip (default 1.0 s: the pinpon 5.0.0 model window is
 ~0.997 s, so the clip must run at least that long or Edge Impulse generates
 zero windows from it), l to change the filename label, q to save the current
 partial recording and quit. --duration changes the record length.
-All received bytes are saved as TXT. CSV contains six-axis numeric samples:
+Only recognized six-axis numeric samples are saved, as CSV:
   * Plain comma/space-separated six values: preserved without rescaling.
   * IMU1,seq,us,Ax_raw,Ay_raw,Az_raw,Gx_raw,Gy_raw,Gz_raw:
     converted to g/dps using that protocol's +/-16 g and +/-2000 dps scales.
 CSV timestamps use board time for valid IMU1 sequences; otherwise they use
 PC receive time (USB batching means this is NOT exact sensor sample timing).
-Startup/debug text remains in TXT, not among the six CSV sensor columns.
+Startup/debug text and any other non-matching lines are discarded, not saved.
 
 Usage: python collect_training_data.py --port COM9 --label FS
 Requires: python -m pip install pyserial
@@ -124,30 +124,24 @@ class Capture:
 
 
 def save_recording(out_root, label, capture):
-    if not capture.raw_bytes and not capture.rows:
-        return None, None, "沒有收到資料"
+    if not capture.rows:
+        if capture.raw_bytes:
+            return None, "收到的內容不是可辨識的六軸數值，未儲存"
+        return None, "沒有收到資料"
     now = datetime.now()
     stamp = now.strftime("%Y%m%d_%H%M%S_%f")
     stem = f"{label}.{stamp}"
-    # Group by today's date, then by label; CSV/TXT sit directly in that
-    # folder instead of separate csv_data/txt_data subfolders.
+    # Group by today's date, then by label.
     label_dir = out_root / now.strftime("%Y%m%d") / label
     label_dir.mkdir(parents=True, exist_ok=True)
-    # TXT is the unmodified serial record, including diagnostics/partial lines.
-    txt_path = label_dir / (stem + ".txt")
-    with txt_path.open("xb") as stream:
-        stream.write(capture.raw_bytes)
-    csv_path = None
-    timing = "只有原始文字"
-    if capture.rows:
-        csv_path = label_dir / (stem + ".csv")
-        timestamps, timing = capture.timestamps_ms()
-        with csv_path.open("x", encoding="utf-8", newline="") as stream:
-            writer = csv.writer(stream)
-            writer.writerow(CSV_HEADER)
-            for timestamp, (_, sample) in zip(timestamps, capture.rows):
-                writer.writerow([f"{timestamp:.3f}", *sample.values])
-    return txt_path, csv_path, timing
+    csv_path = label_dir / (stem + ".csv")
+    timestamps, timing = capture.timestamps_ms()
+    with csv_path.open("x", encoding="utf-8", newline="") as stream:
+        writer = csv.writer(stream)
+        writer.writerow(CSV_HEADER)
+        for timestamp, (_, sample) in zip(timestamps, capture.rows):
+            writer.writerow([f"{timestamp:.3f}", *sample.values])
+    return csv_path, timing
 
 
 def valid_label(label):
@@ -225,7 +219,7 @@ def main():
         return 1
     label = args.label or prompt_label("record")
     print("單純紀錄模式：不做動作辨識，也不依頻率拒絕存檔。")
-    print("一般六欄數值原樣保存；所有原始內容另存 TXT。")
+    print("一般六欄數值原樣保存為 CSV；其餘無法辨識的內容不會儲存。")
     print(f"輸出：{args.outdir.resolve()}")
     print(f"s 紀錄 {args.duration:g} 秒；l 換檔案標籤；q 儲存目前資料並離開。")
     try:
@@ -249,15 +243,11 @@ def main():
         nonlocal capture
         current = capture
         capture = None
-        txt_path, csv_path, timing = save_recording(args.outdir, label, current)
-        if txt_path is None:
-            print("\n這段時間沒有收到資料。")
+        csv_path, timing = save_recording(args.outdir, label, current)
+        if csv_path is None:
+            print(f"\n{timing}。")
             return
-        print(f"\n已記錄 {len(current.raw_bytes)} bytes 原始內容 → {txt_path}")
-        if csv_path:
-            print(f"六軸 CSV：{len(current.rows)} 筆（{timing}）→ {csv_path}")
-        else:
-            print("這段內容不是一般六欄數字，已完整保留在 TXT。")
+        print(f"\n六軸 CSV：{len(current.rows)} 筆（{timing}）→ {csv_path}")
 
     try:
         while True:

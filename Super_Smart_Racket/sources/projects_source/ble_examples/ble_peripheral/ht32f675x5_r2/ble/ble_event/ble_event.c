@@ -430,3 +430,12 @@ void ble_event_init(void)
 {
     ble_callback_set_host_stack_send_event_callback(ble_event_handler);
 }
+
+/**
+ * @brief  Get the connection handle of the currently connected central,
+ *         or 0 if there is no active connection.
+ */
+uint16_t ble_event_get_conn_handle(void)
+{
+    return m_u16ConnHandle;
+}

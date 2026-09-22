@@ -34,4 +34,9 @@
  */
 extern void ble_event_init(void);
 
+/**
+ * @brief  Get the connection handle of the currently connected central,
+ *         or 0 if there is no active connection.
+ */
+
 #endif /* __BLE_EVENT_H__ */

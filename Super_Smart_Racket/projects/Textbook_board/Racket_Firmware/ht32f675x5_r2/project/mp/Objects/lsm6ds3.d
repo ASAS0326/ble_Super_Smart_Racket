@@ -47,7 +47,8 @@ objects/lsm6ds3.o: LSM6DS3.c LSM6DS3.h i2c.h \
  ../../../../../../sources/drivers/ht32f675x5_r2/ht32/hw/inc/hw_sys_ctrl.h \
  ../../../../../../sources/drivers/ht32f675x5_r2/ht32/hw/inc/hw_wdt.h \
  ../../../../../../sources/drivers/ht32f675x5_r2/ht32/hw/inc/hw_dma.h \
- patch_hw_i2c.h ../../config/app_cfg.h \
+ ../../../../../../sources/patch/ht32f675x5_patch_lib_r2/patch_hw/inc/patch_hw_i2c.h \
+ ../../config/app_cfg.h \
  ../../config/..\..\..\..\..\sources\mem_cfg\ht32f675x5_mem_cfg_r2.h \
  ../../../../../../sources/boards/boards.h \
  ../../../../../../sources/boards/ht32f67595_evb.h \
