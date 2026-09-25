@@ -71,9 +71,11 @@
 //=============================================================================
 // GPIO
 //=============================================================================
-// app_debug
-#define GPIO_PORT_APP_DEBUG_TX             (GPIO_PORT_UART0_TX)
-#define GPIO_PIN_APP_DEBUG_TX              (GPIO_PIN_UART0_TX)
+// app_debug: UART0 TX on PA29, the same pin Racket_Firmware uses on this board.
+// Not GPIO_PORT_UART0_TX: this project defines HT32F67575_EVB, and boards.h
+// maps that board's UART0 TX to PB7, which is the LSM6DS3 I2C SDA pin here.
+#define GPIO_PORT_APP_DEBUG_TX             (GPIOA)
+#define GPIO_PIN_APP_DEBUG_TX              (GPIO_PIN_29)
 
 // i2c pins
 #define GPIO_PORT_I2C_SCLK                 (GPIOB)

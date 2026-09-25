@@ -45,7 +45,7 @@ I (..\..\..\..\..\sources\components\ht32f675x5_r2\utility\err_def.h)(0x6AA13CF8
 I (..\..\..\..\..\sources\drivers\ht32f675x5_r2\ht32\hw\inc\hw_crg.h)(0x6AA13CF8)
 I (..\..\..\..\..\sources\drivers\ht32f675x5_r2\ht32\hw\inc\hw_gpio.h)(0x6AA13CF8)
 I (..\..\..\..\..\sources\drivers\ht32f675x5_r2\ht32\hw\inc\hw_uart.h)(0x6AA13CF8)
-I (..\config\app_cfg.h)(0x6AB104EA)
+I (..\config\app_cfg.h)(0x6AB6160B)
 I (..\config\..\..\..\..\..\sources\mem_cfg\ht32f675x5_mem_cfg_r2.h)(0x6AA13CF8)
 I (..\..\..\..\..\sources\components\ht32f675x5_r2\app_debug\app_debug.h)(0x6AA13CF8)
 F (..\..\..\..\..\sources\components\ht32f675x5_r2\err_debug\err_debug.c)(0x6AA13CF8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m33 -mfpu=fpv5-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../../../third_party/CMSIS/5.7.0/CMSIS/Include -I ../../../../../sources/device/ht32f675x5/Include -I ../../../../../sources/drivers/ht32f675x5_r2/ht32/register -I ../../../../../sources/drivers/ht32f675x5_r2/ht32/hw/inc -I ../../../../../sources/drivers/ht32f675x5_r2/ht32/hal/inc -I ../../../../../sources/drivers/ht32f675x5_r2/ext_flash -I ../../../../../sources/patch/ht32f675x5_patch_lib_r2/patch_hw/inc -I ../../../../../sources/patch/ht32f675x5_patch_lib_r2/patch_hal/inc -I ../../../../../sources/boards -I ../../../../../sources/components/ht32f675x5_r2/app_debug -I ../../../../../sources/components/ht32f675x5_r2/err_debug -I ../../../../../sources/components/ht32f675x5_r2/rom_callback -I ../../../../../sources/components/ht32f675x5_r2/utility -I ../../../../../sources/mem_cfg -I ../config -I ./RTE/_i2c -I ../project -D__UVISION_VERSION="543" -D_RTE_ -D__MAIN_PROCESSOR -DHT32F67575_EVB-o ./objects/err_debug.o -MMD)
@@ -83,7 +83,7 @@ I (..\..\..\..\..\sources\drivers\ht32f675x5_r2\ht32\register\reg_usb_phy.h)(0x6
 I (..\..\..\..\..\sources\drivers\ht32f675x5_r2\ht32\register\ht32f675x5_reg.h)(0x6AA13CF8)
 I (..\..\..\..\..\sources\components\ht32f675x5_r2\utility\err_def.h)(0x6AA13CF8)
 I (..\..\..\..\..\sources\drivers\ht32f675x5_r2\ht32\hw\inc\hw_wdt.h)(0x6AA13CF8)
-I (..\config\app_cfg.h)(0x6AB104EA)
+I (..\config\app_cfg.h)(0x6AB6160B)
 I (..\config\..\..\..\..\..\sources\mem_cfg\ht32f675x5_mem_cfg_r2.h)(0x6AA13CF8)
 I (..\..\..\..\..\sources\components\ht32f675x5_r2\rom_callback\rom_callback.h)(0x6AA13CF8)
 I (..\..\..\..\..\sources\components\ht32f675x5_r2\app_debug\app_debug.h)(0x6AA13CF8)
@@ -174,7 +174,7 @@ I (..\..\..\..\..\sources\drivers\ht32f675x5_r2\ht32\hw\inc\hw_sys_ctrl.h)(0x6AA
 I (..\..\..\..\..\sources\drivers\ht32f675x5_r2\ht32\hw\inc\hw_wdt.h)(0x6AA13CF8)
 I (..\..\..\..\..\sources\drivers\ht32f675x5_r2\ht32\hw\inc\hw_dma.h)(0x6AA13CF8)
 I (..\..\..\..\..\sources\patch\ht32f675x5_patch_lib_r2\patch_hw\inc\patch_hw_i2c.h)(0x6AA13CFA)
-I (..\config\app_cfg.h)(0x6AB104EA)
+I (..\config\app_cfg.h)(0x6AB6160B)
 I (..\config\..\..\..\..\..\sources\mem_cfg\ht32f675x5_mem_cfg_r2.h)(0x6AA13CF8)
 I (..\..\..\..\..\sources\boards\boards.h)(0x6AB10AD6)
 I (..\..\..\..\..\sources\boards\ht32f67575_evb.h)(0x6AB10AD6)
@@ -229,7 +229,7 @@ I (..\..\..\..\..\sources\drivers\ht32f675x5_r2\ht32\hw\inc\hw_sys_ctrl.h)(0x6AA
 I (..\..\..\..\..\sources\drivers\ht32f675x5_r2\ht32\hw\inc\hw_wdt.h)(0x6AA13CF8)
 I (..\..\..\..\..\sources\drivers\ht32f675x5_r2\ht32\hw\inc\hw_dma.h)(0x6AA13CF8)
 I (..\..\..\..\..\sources\patch\ht32f675x5_patch_lib_r2\patch_hw\inc\patch_hw_i2c.h)(0x6AA13CFA)
-I (..\config\app_cfg.h)(0x6AB104EA)
+I (..\config\app_cfg.h)(0x6AB6160B)
 I (..\config\..\..\..\..\..\sources\mem_cfg\ht32f675x5_mem_cfg_r2.h)(0x6AA13CF8)
 I (..\..\..\..\..\sources\boards\boards.h)(0x6AB10AD6)
 I (..\..\..\..\..\sources\boards\ht32f67575_evb.h)(0x6AB10AD6)

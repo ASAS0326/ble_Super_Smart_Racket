@@ -3,9 +3,9 @@ layer:
   description: Edge Impulse SDK and model
 
   packs:
-    - pack: EdgeImpulse::EI-SDK@1.95.13
-    - pack: EdgeImpulse::pinpon@5.0.0
+    - pack: EdgeImpulse::EI-SDK@1.95.14
+    - pack: EdgeImpulse::pinpon@10.0.0
 
   components:
-    - component: EdgeImpulse::EdgeImpulse:SDK@1.95.13
-    - component: EdgeImpulse:model:pinpon@5.0.0
+    - component: EdgeImpulse::EdgeImpulse:SDK@1.95.14
+    - component: EdgeImpulse:model:pinpon@10.0.0

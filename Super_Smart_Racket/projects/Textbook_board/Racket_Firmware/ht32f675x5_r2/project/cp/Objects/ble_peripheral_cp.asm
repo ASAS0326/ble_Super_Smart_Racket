@@ -31,8 +31,8 @@
     Program header entries: 1
     Section header entries: 18
 
-    Program header offset: 562956 (0x0008970c)
-    Section header offset: 562988 (0x0008972c)
+    Program header offset: 562592 (0x000895a0)
+    Section header offset: 562624 (0x000895c0)
 
     Section header string table index: 17
 
@@ -1354,10 +1354,10 @@
         0x20003aa0:    726f7720     wor    DCD    1919907616
         0x20003aa4:    000a2e6b    k...    DCD    667243
         0x20003aa8:    20706553    Sep     DCD    544236883
-        0x20003aac:    32203232    22 2    DCD    840970802
+        0x20003aac:    32203532    25 2    DCD    840971570
         0x20003ab0:    00363230    026.    DCD    3551792
-        0x20003ab4:    353a3231    12:5    DCD    893006385
-        0x20003ab8:    37313a31    1:17    DCD    925973041
+        0x20003ab4:    323a3731    17:2    DCD    842676017
+        0x20003ab8:    30353a38    8:50    DCD    808794680
         0x20003abc:    00000000    ....    DCD    0
         0x20003ac0:    65707553    Supe    DCD    1701868883
         0x20003ac4:    6d535f72    r_Sm    DCD    1834180466
@@ -10454,7 +10454,7 @@
 
 
 ** Section #8 '.debug_info' (SHT_PROGBITS)
-    Size   : 95515 bytes
+    Size   : 95495 bytes
 
 
 ** Section #9 '.debug_line' (SHT_PROGBITS)
@@ -10470,7 +10470,7 @@
 
 
 ** Section #12 '.debug_str' (SHT_PROGBITS)
-    Size   : 177002 bytes
+    Size   : 176678 bytes
 
 
 ** Section #13 '.symtab' (SHT_SYMTAB)
@@ -10488,7 +10488,7 @@
 
 
 ** Section #16 '.comment' (SHT_PROGBITS)
-    Size   : 2832 bytes
+    Size   : 2812 bytes
 
 
 ** Section #17 '.shstrtab' (SHT_STRTAB)

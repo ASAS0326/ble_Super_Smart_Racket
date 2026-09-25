@@ -507,95 +507,95 @@ Image Symbol Table
     [Anonymous Symbol]                       0x2000543c   Section        0  patch_hw_i2c.o(.text.patch_hw_i2c_master_send_stop)
     [Anonymous Symbol]                       0x200054a4   Section        0  patch_hw_i2c.o(.text.patch_hw_i2c_master_write)
     [Anonymous Symbol]                       0x20005624   Section        0  i2c.o(.text.peripheral_init)
-    [Anonymous Symbol]                       0x20005654   Section        0  i2c.o(.text.system_clock_init)
-    [Anonymous Symbol]                       0x200056c4   Section        0  i2c.o(.text.system_power_init)
-    i.__0printf                              0x20005878   Section        0  printfa.o(i.__0printf)
-    _fp_digits                               0x20005899   Thumb Code   366  printfa.o(i._fp_digits)
-    i._fp_digits                             0x20005898   Section        0  printfa.o(i._fp_digits)
-    _printf_core                             0x20005a1d   Thumb Code  1744  printfa.o(i._printf_core)
-    i._printf_core                           0x20005a1c   Section        0  printfa.o(i._printf_core)
-    _printf_post_padding                     0x200060f9   Thumb Code    36  printfa.o(i._printf_post_padding)
-    i._printf_post_padding                   0x200060f8   Section        0  printfa.o(i._printf_post_padding)
-    _printf_pre_padding                      0x2000611d   Thumb Code    46  printfa.o(i._printf_pre_padding)
-    i._printf_pre_padding                    0x2000611c   Section        0  printfa.o(i._printf_pre_padding)
-    .L.str.35                                0x2000614a   Data          47  err_debug.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x2000614a   Section        0  err_debug.o(.rodata.str1.1)
-    .L.str.33                                0x20006179   Data          58  err_debug.o(.rodata.str1.1)
-    .L.str.39                                0x200061b3   Data          60  err_debug.o(.rodata.str1.1)
-    .L.str.28                                0x200061ef   Data          56  err_debug.o(.rodata.str1.1)
-    .L.str.38                                0x20006227   Data          52  err_debug.o(.rodata.str1.1)
-    .L.str.26                                0x2000625b   Data          46  err_debug.o(.rodata.str1.1)
-    .L.str.36                                0x20006289   Data          65  err_debug.o(.rodata.str1.1)
-    .L.str.37                                0x200062ca   Data          45  err_debug.o(.rodata.str1.1)
-    .L.str.34                                0x200062f7   Data          62  err_debug.o(.rodata.str1.1)
-    .L.str.24                                0x20006335   Data          84  err_debug.o(.rodata.str1.1)
-    .L.str.31                                0x20006389   Data          77  err_debug.o(.rodata.str1.1)
-    .L.str.22                                0x200063d6   Data          86  err_debug.o(.rodata.str1.1)
-    .L.str.23                                0x2000642c   Data          84  err_debug.o(.rodata.str1.1)
-    .L.str.29                                0x20006480   Data          77  err_debug.o(.rodata.str1.1)
-    .L.str.30                                0x200064cd   Data          75  err_debug.o(.rodata.str1.1)
-    .L.str.18                                0x20006518   Data          18  err_debug.o(.rodata.str1.1)
-    .L.str.32                                0x2000652a   Data          14  err_debug.o(.rodata.str1.1)
-    .L.str.17                                0x20006538   Data          21  err_debug.o(.rodata.str1.1)
-    .L.str.15                                0x2000654d   Data          15  err_debug.o(.rodata.str1.1)
-    .L.str.25                                0x2000655c   Data          12  err_debug.o(.rodata.str1.1)
-    .L.str.16                                0x20006568   Data          20  err_debug.o(.rodata.str1.1)
-    .L.str.27                                0x2000657c   Data          55  err_debug.o(.rodata.str1.1)
-    .L.str.20                                0x200065b3   Data         115  err_debug.o(.rodata.str1.1)
-    .L.str.19                                0x20006626   Data         117  err_debug.o(.rodata.str1.1)
-    .L.str.21                                0x2000669b   Data          13  err_debug.o(.rodata.str1.1)
-    .L.str.2                                 0x200066a8   Data          18  err_debug.o(.rodata.str1.1)
-    .L.str.5                                 0x200066ba   Data          15  err_debug.o(.rodata.str1.1)
-    .L.str.4                                 0x200066c9   Data          15  err_debug.o(.rodata.str1.1)
-    .L.str.3                                 0x200066d8   Data          23  err_debug.o(.rodata.str1.1)
-    .L.str.6                                 0x200066ef   Data          14  err_debug.o(.rodata.str1.1)
-    .L.str                                   0x2000670b   Data          31  err_debug.o(.rodata.str1.1)
-    .L.str.7                                 0x2000673d   Data          14  err_debug.o(.rodata.str1.1)
-    .L.str.8                                 0x2000674b   Data          14  err_debug.o(.rodata.str1.1)
-    .L.str.9                                 0x20006759   Data          14  err_debug.o(.rodata.str1.1)
-    .L.str.10                                0x20006767   Data          14  err_debug.o(.rodata.str1.1)
-    .L.str.13                                0x20006775   Data          14  err_debug.o(.rodata.str1.1)
-    .L.str.12                                0x20006783   Data          14  err_debug.o(.rodata.str1.1)
-    .L.str.11                                0x20006791   Data          14  err_debug.o(.rodata.str1.1)
-    .L.str.14                                0x2000679f   Data          14  err_debug.o(.rodata.str1.1)
-    .L.str.40                                0x200067b4   Data          15  err_debug.o(.rodata.str1.1)
-    .L.str.41                                0x200067c3   Data          19  err_debug.o(.rodata.str1.1)
-    .L.str.1                                 0x200067ce   Data          40  err_debug.o(.rodata.str1.1)
-    .L.str.42                                0x200067d6   Data          19  err_debug.o(.rodata.str1.1)
-    .L.str.43                                0x200067e9   Data          14  err_debug.o(.rodata.str1.1)
-    .L.str.44                                0x200067f7   Data          14  err_debug.o(.rodata.str1.1)
-    .L.str.45                                0x20006805   Data          21  err_debug.o(.rodata.str1.1)
-    .L.str.46                                0x2000681a   Data          31  err_debug.o(.rodata.str1.1)
-    .L.str.47                                0x20006839   Data          31  err_debug.o(.rodata.str1.1)
-    .L.str.2                                 0x20006856   Data           2  err_debug.o(.rodata.str1.1)
-    .L.str.12                                0x20006858   Data          41  i2c.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x20006858   Section        0  i2c.o(.rodata.str1.1)
-    .L.str.11                                0x20006881   Data          30  i2c.o(.rodata.str1.1)
-    .L.str.9                                 0x2000689f   Data          29  i2c.o(.rodata.str1.1)
-    .L.str.16                                0x200068bc   Data          33  i2c.o(.rodata.str1.1)
-    .L.str.5                                 0x200068dd   Data          32  i2c.o(.rodata.str1.1)
-    .L.str.10                                0x200068fd   Data          28  i2c.o(.rodata.str1.1)
-    .L.str.8                                 0x20006919   Data          47  i2c.o(.rodata.str1.1)
-    .L.str.14                                0x20006948   Data          22  i2c.o(.rodata.str1.1)
-    .L.str.13                                0x2000695e   Data          23  i2c.o(.rodata.str1.1)
-    .L.str.15                                0x20006975   Data          22  i2c.o(.rodata.str1.1)
-    .L.str.4                                 0x2000698b   Data          29  i2c.o(.rodata.str1.1)
-    .L.str                                   0x200069a8   Data           9  i2c.o(.rodata.str1.1)
-    .L.str.3                                 0x200069b1   Data           9  i2c.o(.rodata.str1.1)
-    .L.str.1                                 0x200069ba   Data           6  i2c.o(.rodata.str1.1)
-    .L.str.7                                 0x200069c0   Data           9  i2c.o(.rodata.str1.1)
-    .L.str.6                                 0x200069c9   Data          12  i2c.o(.rodata.str1.1)
-    .L.str                                   0x200069d5   Data          26  lsm6ds3.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x200069d5   Section        0  lsm6ds3.o(.rodata.str1.1)
-    .L.str.4                                 0x200069ef   Data          41  lsm6ds3.o(.rodata.str1.1)
-    .L.str.6                                 0x20006a18   Data          48  lsm6ds3.o(.rodata.str1.1)
-    .L.str.7                                 0x20006a48   Data          47  lsm6ds3.o(.rodata.str1.1)
-    .L.str.5                                 0x20006a77   Data          35  lsm6ds3.o(.rodata.str1.1)
-    .L.str.3                                 0x20006a9a   Data          35  lsm6ds3.o(.rodata.str1.1)
-    .L.str.2                                 0x20006abd   Data          35  lsm6ds3.o(.rodata.str1.1)
-    .L.str.1                                 0x20006ae0   Data          36  lsm6ds3.o(.rodata.str1.1)
-    .L.str.8                                 0x20006b04   Data          62  lsm6ds3.o(.rodata.str1.1)
-    .L.str.9                                 0x20006b42   Data          68  lsm6ds3.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x20005658   Section        0  i2c.o(.text.system_clock_init)
+    [Anonymous Symbol]                       0x200056c8   Section        0  i2c.o(.text.system_power_init)
+    i.__0printf                              0x2000587c   Section        0  printfa.o(i.__0printf)
+    _fp_digits                               0x2000589d   Thumb Code   366  printfa.o(i._fp_digits)
+    i._fp_digits                             0x2000589c   Section        0  printfa.o(i._fp_digits)
+    _printf_core                             0x20005a21   Thumb Code  1744  printfa.o(i._printf_core)
+    i._printf_core                           0x20005a20   Section        0  printfa.o(i._printf_core)
+    _printf_post_padding                     0x200060fd   Thumb Code    36  printfa.o(i._printf_post_padding)
+    i._printf_post_padding                   0x200060fc   Section        0  printfa.o(i._printf_post_padding)
+    _printf_pre_padding                      0x20006121   Thumb Code    46  printfa.o(i._printf_pre_padding)
+    i._printf_pre_padding                    0x20006120   Section        0  printfa.o(i._printf_pre_padding)
+    .L.str.35                                0x2000614e   Data          47  err_debug.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x2000614e   Section        0  err_debug.o(.rodata.str1.1)
+    .L.str.33                                0x2000617d   Data          58  err_debug.o(.rodata.str1.1)
+    .L.str.39                                0x200061b7   Data          60  err_debug.o(.rodata.str1.1)
+    .L.str.28                                0x200061f3   Data          56  err_debug.o(.rodata.str1.1)
+    .L.str.38                                0x2000622b   Data          52  err_debug.o(.rodata.str1.1)
+    .L.str.26                                0x2000625f   Data          46  err_debug.o(.rodata.str1.1)
+    .L.str.36                                0x2000628d   Data          65  err_debug.o(.rodata.str1.1)
+    .L.str.37                                0x200062ce   Data          45  err_debug.o(.rodata.str1.1)
+    .L.str.34                                0x200062fb   Data          62  err_debug.o(.rodata.str1.1)
+    .L.str.24                                0x20006339   Data          84  err_debug.o(.rodata.str1.1)
+    .L.str.31                                0x2000638d   Data          77  err_debug.o(.rodata.str1.1)
+    .L.str.22                                0x200063da   Data          86  err_debug.o(.rodata.str1.1)
+    .L.str.23                                0x20006430   Data          84  err_debug.o(.rodata.str1.1)
+    .L.str.29                                0x20006484   Data          77  err_debug.o(.rodata.str1.1)
+    .L.str.30                                0x200064d1   Data          75  err_debug.o(.rodata.str1.1)
+    .L.str.18                                0x2000651c   Data          18  err_debug.o(.rodata.str1.1)
+    .L.str.32                                0x2000652e   Data          14  err_debug.o(.rodata.str1.1)
+    .L.str.17                                0x2000653c   Data          21  err_debug.o(.rodata.str1.1)
+    .L.str.15                                0x20006551   Data          15  err_debug.o(.rodata.str1.1)
+    .L.str.25                                0x20006560   Data          12  err_debug.o(.rodata.str1.1)
+    .L.str.16                                0x2000656c   Data          20  err_debug.o(.rodata.str1.1)
+    .L.str.27                                0x20006580   Data          55  err_debug.o(.rodata.str1.1)
+    .L.str.20                                0x200065b7   Data         115  err_debug.o(.rodata.str1.1)
+    .L.str.19                                0x2000662a   Data         117  err_debug.o(.rodata.str1.1)
+    .L.str.21                                0x2000669f   Data          13  err_debug.o(.rodata.str1.1)
+    .L.str.2                                 0x200066ac   Data          18  err_debug.o(.rodata.str1.1)
+    .L.str.5                                 0x200066be   Data          15  err_debug.o(.rodata.str1.1)
+    .L.str.4                                 0x200066cd   Data          15  err_debug.o(.rodata.str1.1)
+    .L.str.3                                 0x200066dc   Data          23  err_debug.o(.rodata.str1.1)
+    .L.str.6                                 0x200066f3   Data          14  err_debug.o(.rodata.str1.1)
+    .L.str                                   0x2000670f   Data          31  err_debug.o(.rodata.str1.1)
+    .L.str.7                                 0x20006741   Data          14  err_debug.o(.rodata.str1.1)
+    .L.str.8                                 0x2000674f   Data          14  err_debug.o(.rodata.str1.1)
+    .L.str.9                                 0x2000675d   Data          14  err_debug.o(.rodata.str1.1)
+    .L.str.10                                0x2000676b   Data          14  err_debug.o(.rodata.str1.1)
+    .L.str.13                                0x20006779   Data          14  err_debug.o(.rodata.str1.1)
+    .L.str.12                                0x20006787   Data          14  err_debug.o(.rodata.str1.1)
+    .L.str.11                                0x20006795   Data          14  err_debug.o(.rodata.str1.1)
+    .L.str.14                                0x200067a3   Data          14  err_debug.o(.rodata.str1.1)
+    .L.str.40                                0x200067b8   Data          15  err_debug.o(.rodata.str1.1)
+    .L.str.41                                0x200067c7   Data          19  err_debug.o(.rodata.str1.1)
+    .L.str.1                                 0x200067d2   Data          40  err_debug.o(.rodata.str1.1)
+    .L.str.42                                0x200067da   Data          19  err_debug.o(.rodata.str1.1)
+    .L.str.43                                0x200067ed   Data          14  err_debug.o(.rodata.str1.1)
+    .L.str.44                                0x200067fb   Data          14  err_debug.o(.rodata.str1.1)
+    .L.str.45                                0x20006809   Data          21  err_debug.o(.rodata.str1.1)
+    .L.str.46                                0x2000681e   Data          31  err_debug.o(.rodata.str1.1)
+    .L.str.47                                0x2000683d   Data          31  err_debug.o(.rodata.str1.1)
+    .L.str.2                                 0x2000685a   Data           2  err_debug.o(.rodata.str1.1)
+    .L.str.12                                0x2000685c   Data          41  i2c.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x2000685c   Section        0  i2c.o(.rodata.str1.1)
+    .L.str.11                                0x20006885   Data          30  i2c.o(.rodata.str1.1)
+    .L.str.9                                 0x200068a3   Data          29  i2c.o(.rodata.str1.1)
+    .L.str.16                                0x200068c0   Data          33  i2c.o(.rodata.str1.1)
+    .L.str.5                                 0x200068e1   Data          32  i2c.o(.rodata.str1.1)
+    .L.str.10                                0x20006901   Data          28  i2c.o(.rodata.str1.1)
+    .L.str.8                                 0x2000691d   Data          47  i2c.o(.rodata.str1.1)
+    .L.str.14                                0x2000694c   Data          22  i2c.o(.rodata.str1.1)
+    .L.str.13                                0x20006962   Data          23  i2c.o(.rodata.str1.1)
+    .L.str.15                                0x20006979   Data          22  i2c.o(.rodata.str1.1)
+    .L.str.4                                 0x2000698f   Data          29  i2c.o(.rodata.str1.1)
+    .L.str                                   0x200069ac   Data           9  i2c.o(.rodata.str1.1)
+    .L.str.3                                 0x200069b5   Data           9  i2c.o(.rodata.str1.1)
+    .L.str.1                                 0x200069be   Data           6  i2c.o(.rodata.str1.1)
+    .L.str.7                                 0x200069c4   Data           9  i2c.o(.rodata.str1.1)
+    .L.str.6                                 0x200069cd   Data          12  i2c.o(.rodata.str1.1)
+    .L.str                                   0x200069d9   Data          26  lsm6ds3.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x200069d9   Section        0  lsm6ds3.o(.rodata.str1.1)
+    .L.str.4                                 0x200069f3   Data          41  lsm6ds3.o(.rodata.str1.1)
+    .L.str.6                                 0x20006a1c   Data          48  lsm6ds3.o(.rodata.str1.1)
+    .L.str.7                                 0x20006a4c   Data          47  lsm6ds3.o(.rodata.str1.1)
+    .L.str.5                                 0x20006a7b   Data          35  lsm6ds3.o(.rodata.str1.1)
+    .L.str.3                                 0x20006a9e   Data          35  lsm6ds3.o(.rodata.str1.1)
+    .L.str.2                                 0x20006ac1   Data          35  lsm6ds3.o(.rodata.str1.1)
+    .L.str.1                                 0x20006ae4   Data          36  lsm6ds3.o(.rodata.str1.1)
+    .L.str.8                                 0x20006b08   Data          62  lsm6ds3.o(.rodata.str1.1)
+    .L.str.9                                 0x20006b46   Data          68  lsm6ds3.o(.rodata.str1.1)
     .data                                    0x2000b000   Section        4  stdout.o(.data)
     capture_cycles_per_us                    0x2000b004   Data           4  i2c.o(.bss.capture_cycles_per_us)
     [Anonymous Symbol]                       0x2000b004   Section        0  i2c.o(.bss.capture_cycles_per_us)
@@ -1589,54 +1589,54 @@ Image Symbol Table
     patch_hw_i2c_master_read                 0x20005225   Thumb Code   534  patch_hw_i2c.o(.text.patch_hw_i2c_master_read)
     patch_hw_i2c_master_send_stop            0x2000543d   Thumb Code   102  patch_hw_i2c.o(.text.patch_hw_i2c_master_send_stop)
     patch_hw_i2c_master_write                0x200054a5   Thumb Code   382  patch_hw_i2c.o(.text.patch_hw_i2c_master_write)
-    peripheral_init                          0x20005625   Thumb Code    48  i2c.o(.text.peripheral_init)
-    system_clock_init                        0x20005655   Thumb Code   112  i2c.o(.text.system_clock_init)
-    system_power_init                        0x200056c5   Thumb Code    34  i2c.o(.text.system_power_init)
-    Long Thumb to Thumb Veneer to rom_hw_dma_get_interrupt_flag 0x200056e7   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_dma_clear_interrupt_flag 0x200056f1   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_dma_get_trx_pointer 0x200056fb   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_dma_disable 0x20005705   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_uart_send_byte 0x2000570f   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_crg_enable_clk_gate 0x20005719   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_gpio_set_pin_pid 0x20005723   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_gpio_set_pin_pull_mode 0x2000572d   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_uart_init 0x20005737   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to SystemCoreGetClock 0x20005741   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_uart_transmit 0x2000574b   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_gpio_set_pin_input_output 0x20005755   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_gpio_set_pin_drive_strength 0x2000575f   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_gpio_set_pin_output_level 0x20005769   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_i2c_get_interrupt_flag 0x20005773   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_i2c_clear_interrupt_flag 0x2000577d   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_delay_ms 0x20005787   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_delay_us 0x20005791   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_dma_init 0x2000579b   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_i2c_master_init 0x200057a5   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_i2c_set_mode 0x200057af   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_i2c_master_set_trx_mode 0x200057b9   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_i2c_master_enable_stretch 0x200057c3   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_i2c_master_set_rxfifo_full_value 0x200057cd   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_i2c_set_rxfifo_thld 0x200057d7   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_dma_enable_interrupt 0x200057e1   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_dma_enable 0x200057eb   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_dma_set_interval_tx_index 0x200057f5   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_wdt_disable 0x200057ff   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_sys_ctrl_peri_int_ctrl 0x20005809   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_efuse_read_bytes 0x20005813   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_pmu_set_rc_hclk_tune 0x2000581d   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_pmu_set_rc_lclk_tune 0x20005827   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_pmu_sel_dcxo_hclk_pwr 0x20005831   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hal_pmu_cfg_dcxo_hclk_param 0x2000583b   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hal_pmu_set_sys_clk_src 0x20005845   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_pmu_set_ldo_act_voltage 0x2000584f   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_pmu_set_ldo_dig_voltage 0x20005859   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hw_pmu_set_ldo_ret_sleep_voltage 0x20005863   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    Long Thumb to Thumb Veneer to rom_hal_pmu_sel_power_act_out_mode 0x2000586d   Thumb Code    10  anon$$obj.o(Veneer$$Code)
-    __0printf                                0x20005879   Thumb Code    22  printfa.o(i.__0printf)
-    __1printf                                0x20005879   Thumb Code     0  printfa.o(i.__0printf)
-    __2printf                                0x20005879   Thumb Code     0  printfa.o(i.__0printf)
-    __c89printf                              0x20005879   Thumb Code     0  printfa.o(i.__0printf)
-    printf                                   0x20005879   Thumb Code     0  printfa.o(i.__0printf)
+    peripheral_init                          0x20005625   Thumb Code    50  i2c.o(.text.peripheral_init)
+    system_clock_init                        0x20005659   Thumb Code   112  i2c.o(.text.system_clock_init)
+    system_power_init                        0x200056c9   Thumb Code    34  i2c.o(.text.system_power_init)
+    Long Thumb to Thumb Veneer to rom_hw_dma_get_interrupt_flag 0x200056eb   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_dma_clear_interrupt_flag 0x200056f5   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_dma_get_trx_pointer 0x200056ff   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_dma_disable 0x20005709   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_uart_send_byte 0x20005713   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_crg_enable_clk_gate 0x2000571d   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_gpio_set_pin_pid 0x20005727   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_gpio_set_pin_pull_mode 0x20005731   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_uart_init 0x2000573b   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to SystemCoreGetClock 0x20005745   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_uart_transmit 0x2000574f   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_gpio_set_pin_input_output 0x20005759   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_gpio_set_pin_drive_strength 0x20005763   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_gpio_set_pin_output_level 0x2000576d   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_i2c_get_interrupt_flag 0x20005777   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_i2c_clear_interrupt_flag 0x20005781   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_delay_ms 0x2000578b   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_delay_us 0x20005795   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_dma_init 0x2000579f   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_i2c_master_init 0x200057a9   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_i2c_set_mode 0x200057b3   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_i2c_master_set_trx_mode 0x200057bd   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_i2c_master_enable_stretch 0x200057c7   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_i2c_master_set_rxfifo_full_value 0x200057d1   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_i2c_set_rxfifo_thld 0x200057db   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_dma_enable_interrupt 0x200057e5   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_dma_enable 0x200057ef   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_dma_set_interval_tx_index 0x200057f9   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_wdt_disable 0x20005803   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_sys_ctrl_peri_int_ctrl 0x2000580d   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_efuse_read_bytes 0x20005817   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_pmu_set_rc_hclk_tune 0x20005821   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_pmu_set_rc_lclk_tune 0x2000582b   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_pmu_sel_dcxo_hclk_pwr 0x20005835   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hal_pmu_cfg_dcxo_hclk_param 0x2000583f   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hal_pmu_set_sys_clk_src 0x20005849   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_pmu_set_ldo_act_voltage 0x20005853   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_pmu_set_ldo_dig_voltage 0x2000585d   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hw_pmu_set_ldo_ret_sleep_voltage 0x20005867   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    Long Thumb to Thumb Veneer to rom_hal_pmu_sel_power_act_out_mode 0x20005871   Thumb Code    10  anon$$obj.o(Veneer$$Code)
+    __0printf                                0x2000587d   Thumb Code    22  printfa.o(i.__0printf)
+    __1printf                                0x2000587d   Thumb Code     0  printfa.o(i.__0printf)
+    __2printf                                0x2000587d   Thumb Code     0  printfa.o(i.__0printf)
+    __c89printf                              0x2000587d   Thumb Code     0  printfa.o(i.__0printf)
+    printf                                   0x2000587d   Thumb Code     0  printfa.o(i.__0printf)
     __stdout                                 0x2000b000   Data           4  stdout.o(.data)
     __stack_limit                            0x2000f000   Data           0  startup_armcm33.o(STACK)
     __initial_sp                             0x20010000   Data           0  startup_armcm33.o(STACK)
@@ -1659,7 +1659,7 @@ Memory Map of the image
 
 
 
-  Load Region LOAD_APP (Base: 0x10002000, Size: 0x00003cb0, Max: 0x0007e000, ABSOLUTE)
+  Load Region LOAD_APP (Base: 0x10002000, Size: 0x00003cb4, Max: 0x0007e000, ABSOLUTE)
 
     Execution Region INIT (Exec base: 0x10002000, Load base: 0x10002000, Size: 0x00000324, Max: 0xffffffff, ABSOLUTE, FIXED)
 
@@ -1692,7 +1692,7 @@ Memory Map of the image
     0x20003000        -       0x0000012c   Zero   RW           12    .bss.new_vector     system_armcm33.o
 
 
-    Execution Region RAM_CODE (Exec base: 0x20003200, Load base: 0x10002324, Size: 0x00003988, Max: 0x00007e00, ABSOLUTE)
+    Execution Region RAM_CODE (Exec base: 0x20003200, Load base: 0x10002324, Size: 0x0000398c, Max: 0x00007e00, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1755,65 +1755,66 @@ Memory Map of the image
     0x200054a2   0x100045c6   0x00000002   PAD
     0x200054a4   0x100045c8   0x0000017e   Code   RO          175    .text.patch_hw_i2c_master_write  ht32f675x5_patch_lib_mp_r2.lib(patch_hw_i2c.o)
     0x20005622   0x10004746   0x00000002   PAD
-    0x20005624   0x10004748   0x00000030   Code   RO           91    .text.peripheral_init  i2c.o
-    0x20005654   0x10004778   0x00000070   Code   RO           89    .text.system_clock_init  i2c.o
-    0x200056c4   0x100047e8   0x00000022   Code   RO           87    .text.system_power_init  i2c.o
-    0x200056e6   0x1000480a   0x0000000a   Ven    RO          272    Veneer$$Code        anon$$obj.o
-    0x200056f0   0x10004814   0x0000000a   Ven    RO          273    Veneer$$Code        anon$$obj.o
-    0x200056fa   0x1000481e   0x0000000a   Ven    RO          274    Veneer$$Code        anon$$obj.o
-    0x20005704   0x10004828   0x0000000a   Ven    RO          275    Veneer$$Code        anon$$obj.o
-    0x2000570e   0x10004832   0x0000000a   Ven    RO          276    Veneer$$Code        anon$$obj.o
-    0x20005718   0x1000483c   0x0000000a   Ven    RO          277    Veneer$$Code        anon$$obj.o
-    0x20005722   0x10004846   0x0000000a   Ven    RO          278    Veneer$$Code        anon$$obj.o
-    0x2000572c   0x10004850   0x0000000a   Ven    RO          279    Veneer$$Code        anon$$obj.o
-    0x20005736   0x1000485a   0x0000000a   Ven    RO          280    Veneer$$Code        anon$$obj.o
-    0x20005740   0x10004864   0x0000000a   Ven    RO          281    Veneer$$Code        anon$$obj.o
-    0x2000574a   0x1000486e   0x0000000a   Ven    RO          282    Veneer$$Code        anon$$obj.o
-    0x20005754   0x10004878   0x0000000a   Ven    RO          283    Veneer$$Code        anon$$obj.o
-    0x2000575e   0x10004882   0x0000000a   Ven    RO          284    Veneer$$Code        anon$$obj.o
-    0x20005768   0x1000488c   0x0000000a   Ven    RO          285    Veneer$$Code        anon$$obj.o
-    0x20005772   0x10004896   0x0000000a   Ven    RO          286    Veneer$$Code        anon$$obj.o
-    0x2000577c   0x100048a0   0x0000000a   Ven    RO          287    Veneer$$Code        anon$$obj.o
-    0x20005786   0x100048aa   0x0000000a   Ven    RO          288    Veneer$$Code        anon$$obj.o
-    0x20005790   0x100048b4   0x0000000a   Ven    RO          289    Veneer$$Code        anon$$obj.o
-    0x2000579a   0x100048be   0x0000000a   Ven    RO          290    Veneer$$Code        anon$$obj.o
-    0x200057a4   0x100048c8   0x0000000a   Ven    RO          291    Veneer$$Code        anon$$obj.o
-    0x200057ae   0x100048d2   0x0000000a   Ven    RO          292    Veneer$$Code        anon$$obj.o
-    0x200057b8   0x100048dc   0x0000000a   Ven    RO          293    Veneer$$Code        anon$$obj.o
-    0x200057c2   0x100048e6   0x0000000a   Ven    RO          294    Veneer$$Code        anon$$obj.o
-    0x200057cc   0x100048f0   0x0000000a   Ven    RO          295    Veneer$$Code        anon$$obj.o
-    0x200057d6   0x100048fa   0x0000000a   Ven    RO          296    Veneer$$Code        anon$$obj.o
-    0x200057e0   0x10004904   0x0000000a   Ven    RO          297    Veneer$$Code        anon$$obj.o
-    0x200057ea   0x1000490e   0x0000000a   Ven    RO          298    Veneer$$Code        anon$$obj.o
-    0x200057f4   0x10004918   0x0000000a   Ven    RO          299    Veneer$$Code        anon$$obj.o
-    0x200057fe   0x10004922   0x0000000a   Ven    RO          300    Veneer$$Code        anon$$obj.o
-    0x20005808   0x1000492c   0x0000000a   Ven    RO          301    Veneer$$Code        anon$$obj.o
-    0x20005812   0x10004936   0x0000000a   Ven    RO          302    Veneer$$Code        anon$$obj.o
-    0x2000581c   0x10004940   0x0000000a   Ven    RO          303    Veneer$$Code        anon$$obj.o
-    0x20005826   0x1000494a   0x0000000a   Ven    RO          304    Veneer$$Code        anon$$obj.o
-    0x20005830   0x10004954   0x0000000a   Ven    RO          305    Veneer$$Code        anon$$obj.o
-    0x2000583a   0x1000495e   0x0000000a   Ven    RO          306    Veneer$$Code        anon$$obj.o
-    0x20005844   0x10004968   0x0000000a   Ven    RO          307    Veneer$$Code        anon$$obj.o
-    0x2000584e   0x10004972   0x0000000a   Ven    RO          308    Veneer$$Code        anon$$obj.o
-    0x20005858   0x1000497c   0x0000000a   Ven    RO          309    Veneer$$Code        anon$$obj.o
-    0x20005862   0x10004986   0x0000000a   Ven    RO          310    Veneer$$Code        anon$$obj.o
-    0x2000586c   0x10004990   0x0000000a   Ven    RO          311    Veneer$$Code        anon$$obj.o
-    0x20005876   0x1000499a   0x00000002   PAD
-    0x20005878   0x1000499c   0x00000020   Code   RO          190    i.__0printf         mc_w.l(printfa.o)
-    0x20005898   0x100049bc   0x00000184   Code   RO          197    i._fp_digits        mc_w.l(printfa.o)
-    0x20005a1c   0x10004b40   0x000006dc   Code   RO          198    i._printf_core      mc_w.l(printfa.o)
-    0x200060f8   0x1000521c   0x00000024   Code   RO          199    i._printf_post_padding  mc_w.l(printfa.o)
-    0x2000611c   0x10005240   0x0000002e   Code   RO          200    i._printf_pre_padding  mc_w.l(printfa.o)
-    0x2000614a   0x1000526e   0x0000070e   Data   RO           70    .rodata.str1.1      err_debug.o
-    0x20006858   0x1000597c   0x0000017d   Data   RO          127    .rodata.str1.1      i2c.o
-    0x200069d5   0x10005af9   0x000001b1   Data   RO          160    .rodata.str1.1      lsm6ds3.o
+    0x20005624   0x10004748   0x00000032   Code   RO           91    .text.peripheral_init  i2c.o
+    0x20005656   0x1000477a   0x00000002   PAD
+    0x20005658   0x1000477c   0x00000070   Code   RO           89    .text.system_clock_init  i2c.o
+    0x200056c8   0x100047ec   0x00000022   Code   RO           87    .text.system_power_init  i2c.o
+    0x200056ea   0x1000480e   0x0000000a   Ven    RO          272    Veneer$$Code        anon$$obj.o
+    0x200056f4   0x10004818   0x0000000a   Ven    RO          273    Veneer$$Code        anon$$obj.o
+    0x200056fe   0x10004822   0x0000000a   Ven    RO          274    Veneer$$Code        anon$$obj.o
+    0x20005708   0x1000482c   0x0000000a   Ven    RO          275    Veneer$$Code        anon$$obj.o
+    0x20005712   0x10004836   0x0000000a   Ven    RO          276    Veneer$$Code        anon$$obj.o
+    0x2000571c   0x10004840   0x0000000a   Ven    RO          277    Veneer$$Code        anon$$obj.o
+    0x20005726   0x1000484a   0x0000000a   Ven    RO          278    Veneer$$Code        anon$$obj.o
+    0x20005730   0x10004854   0x0000000a   Ven    RO          279    Veneer$$Code        anon$$obj.o
+    0x2000573a   0x1000485e   0x0000000a   Ven    RO          280    Veneer$$Code        anon$$obj.o
+    0x20005744   0x10004868   0x0000000a   Ven    RO          281    Veneer$$Code        anon$$obj.o
+    0x2000574e   0x10004872   0x0000000a   Ven    RO          282    Veneer$$Code        anon$$obj.o
+    0x20005758   0x1000487c   0x0000000a   Ven    RO          283    Veneer$$Code        anon$$obj.o
+    0x20005762   0x10004886   0x0000000a   Ven    RO          284    Veneer$$Code        anon$$obj.o
+    0x2000576c   0x10004890   0x0000000a   Ven    RO          285    Veneer$$Code        anon$$obj.o
+    0x20005776   0x1000489a   0x0000000a   Ven    RO          286    Veneer$$Code        anon$$obj.o
+    0x20005780   0x100048a4   0x0000000a   Ven    RO          287    Veneer$$Code        anon$$obj.o
+    0x2000578a   0x100048ae   0x0000000a   Ven    RO          288    Veneer$$Code        anon$$obj.o
+    0x20005794   0x100048b8   0x0000000a   Ven    RO          289    Veneer$$Code        anon$$obj.o
+    0x2000579e   0x100048c2   0x0000000a   Ven    RO          290    Veneer$$Code        anon$$obj.o
+    0x200057a8   0x100048cc   0x0000000a   Ven    RO          291    Veneer$$Code        anon$$obj.o
+    0x200057b2   0x100048d6   0x0000000a   Ven    RO          292    Veneer$$Code        anon$$obj.o
+    0x200057bc   0x100048e0   0x0000000a   Ven    RO          293    Veneer$$Code        anon$$obj.o
+    0x200057c6   0x100048ea   0x0000000a   Ven    RO          294    Veneer$$Code        anon$$obj.o
+    0x200057d0   0x100048f4   0x0000000a   Ven    RO          295    Veneer$$Code        anon$$obj.o
+    0x200057da   0x100048fe   0x0000000a   Ven    RO          296    Veneer$$Code        anon$$obj.o
+    0x200057e4   0x10004908   0x0000000a   Ven    RO          297    Veneer$$Code        anon$$obj.o
+    0x200057ee   0x10004912   0x0000000a   Ven    RO          298    Veneer$$Code        anon$$obj.o
+    0x200057f8   0x1000491c   0x0000000a   Ven    RO          299    Veneer$$Code        anon$$obj.o
+    0x20005802   0x10004926   0x0000000a   Ven    RO          300    Veneer$$Code        anon$$obj.o
+    0x2000580c   0x10004930   0x0000000a   Ven    RO          301    Veneer$$Code        anon$$obj.o
+    0x20005816   0x1000493a   0x0000000a   Ven    RO          302    Veneer$$Code        anon$$obj.o
+    0x20005820   0x10004944   0x0000000a   Ven    RO          303    Veneer$$Code        anon$$obj.o
+    0x2000582a   0x1000494e   0x0000000a   Ven    RO          304    Veneer$$Code        anon$$obj.o
+    0x20005834   0x10004958   0x0000000a   Ven    RO          305    Veneer$$Code        anon$$obj.o
+    0x2000583e   0x10004962   0x0000000a   Ven    RO          306    Veneer$$Code        anon$$obj.o
+    0x20005848   0x1000496c   0x0000000a   Ven    RO          307    Veneer$$Code        anon$$obj.o
+    0x20005852   0x10004976   0x0000000a   Ven    RO          308    Veneer$$Code        anon$$obj.o
+    0x2000585c   0x10004980   0x0000000a   Ven    RO          309    Veneer$$Code        anon$$obj.o
+    0x20005866   0x1000498a   0x0000000a   Ven    RO          310    Veneer$$Code        anon$$obj.o
+    0x20005870   0x10004994   0x0000000a   Ven    RO          311    Veneer$$Code        anon$$obj.o
+    0x2000587a   0x1000499e   0x00000002   PAD
+    0x2000587c   0x100049a0   0x00000020   Code   RO          190    i.__0printf         mc_w.l(printfa.o)
+    0x2000589c   0x100049c0   0x00000184   Code   RO          197    i._fp_digits        mc_w.l(printfa.o)
+    0x20005a20   0x10004b44   0x000006dc   Code   RO          198    i._printf_core      mc_w.l(printfa.o)
+    0x200060fc   0x10005220   0x00000024   Code   RO          199    i._printf_post_padding  mc_w.l(printfa.o)
+    0x20006120   0x10005244   0x0000002e   Code   RO          200    i._printf_pre_padding  mc_w.l(printfa.o)
+    0x2000614e   0x10005272   0x0000070e   Data   RO           70    .rodata.str1.1      err_debug.o
+    0x2000685c   0x10005980   0x0000017d   Data   RO          127    .rodata.str1.1      i2c.o
+    0x200069d9   0x10005afd   0x000001b1   Data   RO          160    .rodata.str1.1      lsm6ds3.o
 
 
-    Execution Region RAM_DATA (Exec base: 0x2000b000, Load base: 0x10005cac, Size: 0x000000d0, Max: 0x00005000, ABSOLUTE)
+    Execution Region RAM_DATA (Exec base: 0x2000b000, Load base: 0x10005cb0, Size: 0x000000d0, Max: 0x00005000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x2000b000   0x10005cac   0x00000004   Data   RW          231    .data               mc_w.l(stdout.o)
+    0x2000b000   0x10005cb0   0x00000004   Data   RW          231    .data               mc_w.l(stdout.o)
     0x2000b004        -       0x00000004   Zero   RW          132    .bss.capture_cycles_per_us  i2c.o
     0x2000b008        -       0x00000004   Zero   RW          134    .bss.capture_elapsed_us  i2c.o
     0x2000b00c        -       0x00000004   Zero   RW          133    .bss.capture_fraction_cycles  i2c.o
@@ -1833,7 +1834,7 @@ Memory Map of the image
     0x2000b0cc        -       0x00000004   Zero   RW           49    .bss.m_u32DebugUartBps  app_debug.o
 
 
-    Execution Region RAM_STACK_HEAP (Exec base: 0x2000f000, Load base: 0x10005cb0, Size: 0x00001000, Max: 0x00001000, ABSOLUTE, UNINIT)
+    Execution Region RAM_STACK_HEAP (Exec base: 0x2000f000, Load base: 0x10005cb4, Size: 0x00001000, Max: 0x00001000, ABSOLUTE, UNINIT)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1847,19 +1848,19 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       746          0          0          0         24       9706   app_debug.o
-      1176          0       1806          0          0       4640   err_debug.o
-         0          0       4096          0          0        559   ht32f675x5_boot2_lib_r2_v1.1.o
-      4552          0        381          0        144      20130   i2c.o
-       570          0        433          0         36       3455   lsm6ds3.o
-        48          0          0          0          0       1254   main.o
-       212         24        320          0       4096       3512   startup_armcm33.o
-       124          0          0          0        300       2095   system_armcm33.o
+       746          0          0          0         24       9688   app_debug.o
+      1176          0       1806          0          0       4622   err_debug.o
+         0          0       4096          0          0        541   ht32f675x5_boot2_lib_r2_v1.1.o
+      4554          0        381          0        144      20112   i2c.o
+       570          0        433          0         36       3437   lsm6ds3.o
+        48          0          0          0          0       1236   main.o
+       212         24        320          0       4096       3496   startup_armcm33.o
+       124          0          0          0        300       2077   system_armcm33.o
 
     ----------------------------------------------------------------------
-      7852         24       7086          0       4600      45351   Object Totals
+      7856         24       7086          0       4600      45209   Object Totals
        400          0         48          0          0          0   (incl. Generated)
-        24          0          2          0          0          0   (incl. Padding)
+        26          0          2          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -1913,15 +1914,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     12542        132       7086          4       4600      52308   Grand Totals
-     12542        132       7086          4       4600      52308   ELF Image Totals
-     12542        132       7086          4          0          0   ROM Totals
+     12546        132       7086          4       4600      52166   Grand Totals
+     12546        132       7086          4       4600      52166   ELF Image Totals
+     12546        132       7086          4          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                19628 (  19.17kB)
+    Total RO  Size (Code + RO Data)                19632 (  19.17kB)
     Total RW  Size (RW Data + ZI Data)              4604 (   4.50kB)
-    Total ROM Size (Code + RO Data + RW Data)      19632 (  19.17kB)
+    Total ROM Size (Code + RO Data + RW Data)      19636 (  19.18kB)
 
 ==============================================================================
 

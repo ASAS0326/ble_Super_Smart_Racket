@@ -1,56 +1,37 @@
 #ifndef _EI_MAIN_H_
 #define _EI_MAIN_H_
 
-/* One pair of RAW / EI INPUT lines every ~1 second; 0 disables debug output. */
-#ifndef EI_INPUT_DEBUG_EVERY_N_WINDOWS
-#define EI_INPUT_DEBUG_EVERY_N_WINDOWS 10U
-#endif
-
-/* Device UART measured ~30-31 ms for run_classifier. A 10-sample stride
- * checks the full v5 window every nominal 107.16 ms; sensor remains 104 Hz.
- * FIFO catch-up skips old inferences without discarding sample chronology.
+/* Peak-triggered inference. These values must match the "firmware" block of
+ * the collector's session JSON (Data_collection/.../collect_training_data.py):
+ * the model is trained on 104 Hz windows whose gyro-magnitude peak sits at
+ * SWING_PEAK_INDEX, found by the same detector.
+ *
+ * A swing starts when |gyro| rises through SWING_THRESHOLD_DPS. Its peak is
+ * the largest |gyro| until (window - SWING_PEAK_INDEX - 1) samples bring no
+ * larger value; the window [peak - SWING_PEAK_INDEX, peak + 20] is then
+ * classified once. Latency after the peak is 20 samples (~192 ms) + inference.
  */
-#define EI_INFERENCE_HOP_SAMPLES 10U
-#define EI_MAX_PENDING_FIFO_WORDS 12U
-#define EI_ERR_SAMPLE_BACKLOG (-13)
+#define SWING_THRESHOLD_DPS          250.0f
+#define SWING_PEAK_INDEX             31U
 
-/* V2 event boundaries remain model-driven. A stable clear winner can report
- * before event end; the reported event stays locked until normal V2 closing.
+/* After a REPORTED stroke, no new swing may start within this many samples
+ * of its peak (0.45 s at 104 Hz). After a NONE result there is no pause, so a
+ * backswing that crosses the threshold cannot hide the stroke that follows.
+ * Longer values lost real strokes in simulation on the recorded streams.
  */
+#define SWING_REFRACTORY_SAMPLES     47U
+
+/* Publish a swing only when a stroke class (not NONE) wins with at least
+ * this probability. In simulation on the recorded streams, 0.70 instead of
+ * 0.50 cut false reports by ~15% for one missed stroke out of 381.
+ */
+#define SWING_MIN_CONFIDENCE         0.70f
+
 #define AI_NONE_CLASS_INDEX          6U
 
-#define SWING_START_CONFIDENCE       0.30f
-#define SWING_WINDOW_CONFIDENCE      0.32f
-#define SWING_WINDOW_MARGIN          0.04f
-
-#define SWING_RESULT_CONFIDENCE      0.35f
-#define SWING_RESULT_MARGIN          0.05f
-
-#define SWING_NONE_END_THRESHOLD     0.85f
-#define SWING_LOW_INFO_THRESHOLD     0.30f
-
-#define SWING_END_COUNT              2U
-#define SWING_MAX_TIME_MS            1600U
-#define SWING_COOLDOWN_MS            350U
-
-/* After an event ends, require this many consecutive idle windows (same
- * idle test used to end an event) before arming the next event start.
- * Without this, the racket's own follow-through/recoil right after a real
- * swing can cross SWING_START_CONFIDENCE on a different label and get
- * reported as a second, unrelated swing (documented 回拍誤判 in r1/r7/r8).
- * Raised 1 -> 2 after 7.r1 real-swing testing: a single idle window was not
- * always enough to outlast a strong return/recoil (e.g. BP snapping back
- * and getting reported as FC) before the next event was allowed to arm.
- */
-#define SWING_REARM_IDLE_WINDOWS      2U
-
-#define SWING_EARLY_CONFIDENCE        0.70f
-#define SWING_EARLY_MARGIN            0.15f
-#define SWING_EARLY_WINDOWS             2U
-
-/* Compact integer-only UART trace; 0 disables. No BLE diagnostic packets. */
-#ifndef EI_TRACE_EVERY_N_WINDOWS
-#define EI_TRACE_EVERY_N_WINDOWS         1U
+/* One UART line per classified swing with all seven scores; 0 disables. */
+#ifndef EI_SWING_LOG
+#define EI_SWING_LOG                 1
 #endif
 
 #ifdef __cplusplus

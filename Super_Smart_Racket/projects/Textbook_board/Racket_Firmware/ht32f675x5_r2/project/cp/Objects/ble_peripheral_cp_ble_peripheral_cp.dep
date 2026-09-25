@@ -1,6 +1,6 @@
 Dependencies for Project 'ble_peripheral_cp', Target 'ble_peripheral_cp': (DO NOT MODIFY !)
 CompilerVersion: 6240000::V6.24::ARMCLANG
-F (..\..\..\..\..\..\sources\device\ht32f675x5\Source\ARM\startup_ARMCM0plus.s)(0x6AA13CF8)(--target=arm-arm-none-eabi -mcpu=cortex-m0plus -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-mlittle-endian -gdwarf-4 -Wa,armasm,--pd,"__MICROLIB SETA 1"-I./RTE/_ble_peripheral_cp-IC:/Users/corn9/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/corn9/AppData/Local/Arm/Packs/Holtek/HT32F675x5_DFP/1.0.5/Device/Include-IC:/Users/corn9/AppData/Local/Arm/Packs/Holtek/HT32F675x5_DFP/1.0.5/Device/ARM/ARMCM0plus/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 543" -Wa,armasm,--pd,"ARMCM0P SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"__CO_PROCESSOR SETA 1"-o ./objects/startup_armcm0plus.o)
+F (..\..\..\..\..\..\sources\device\ht32f675x5\Source\ARM\startup_ARMCM0plus.s)(0x6AA13CF8)(--target=arm-arm-none-eabi -mcpu=cortex-m0plus -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-mlittle-endian -gdwarf-4 -Wa,armasm,--pd,"__MICROLIB SETA 1"-I./RTE/_ble_peripheral_cp-IC:/Users/corn9/AppData/Local/Arm/Packs/ARM/CMSIS/6.3.0/CMSIS/Core/Include-IC:/Users/corn9/AppData/Local/Arm/Packs/Holtek/HT32F675x5_DFP/1.0.6/Device/Include-IC:/Users/corn9/AppData/Local/Arm/Packs/Holtek/HT32F675x5_DFP/1.0.6/Device/ARM/ARMCM0plus/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 543" -Wa,armasm,--pd,"ARMCM0P SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1" -Wa,armasm,--pd,"__CO_PROCESSOR SETA 1"-o ./objects/startup_armcm0plus.o)
 F (..\..\..\..\..\..\sources\device\ht32f675x5\Source\system_ARMCM0plus.c)(0x6AA13CF8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -mlittle-endian -gdwarf-4 -O1 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../../../../../../third_party/CMSIS/5.7.0/CMSIS/Include -I ../../../../../../third_party/CMSIS/5.7.0/CMSIS/RTOS2/Include -I ../../../../../../third_party/CMSIS/5.7.0/CMSIS/RTOS2/RTX/Include -I ../../../../../../third_party/CMSIS/5.7.0/CMSIS/RTOS2/RTX/Source -I ../../../../../../third_party/CMSIS/5.7.0/CMSIS/RTOS2/RTX/Config -I ../../../../../../sources/device/ht32f675x5/Include -I ../../../../../../sources/ble5.1/ht32f675x5_r2/rf_init -I ../../../../../../sources/ble5.1/ht32f675x5_r2/ble_init -I ../../../../../../sources/ble5.1/ht32f675x5_r2/ble_stack/callback -I ../../../../../../sources/ble5.1/ht32f675x5_r2/ble_stack/interface -I ../../../../../../sources/ble5.1/ht32f675x5_r2/ble_stack/llp -I ../../../../../../sources/ble5.1/ht32f675x5_r2/ble_stack/llc -I ../../../../../../sources/ble5.1/ht32f675x5_r2/ble_stack/llc/llc_connection_role -I ../../../../../../sources/ble5.1/ht32f675x5_r2/ble_stack/llc/llc_ctrl_procedure -I ../../../../../../sources/ble5.1/ht32f675x5_r2/ble_stack/llc/llc_dtm -I ../../../../../../sources/ble5.1/ht32f675x5_r2/ble_stack/llc/llc_legacy_role -I ../../../../../../sources/ble5.1/ht32f675x5_r2/ble_stack/llc/llc_priority -I ../../../../../../sources/ble5.1/ht32f675x5_r2/ble_stack/sec -I ../../../../../../sources/ble5.1/ht32f675x5_r2/ble_stack/stack/host_stack -I ../../../../../../sources/ble5.1/ht32f675x5_r2/ble_stack/stack/uecc -I ../../../../../../sources/ble5.1/ht32f675x5_r2/ble_services/ble_dis -I ../../../../../../sources/ble5.1/ht32f675x5_r2/ble_services/ble_gap -I ../../../../../../sources/ble5.1/ht32f675x5_r2/ble_services/ble_gatt -I ../../../../../../sources/ble5.1/ht32f675x5_r2/ble_services/ble_mus -I ../../../../../../sources/ble5.1/ht32f675x5_r2/ble_services/ble_ota -I ../../../../../../sources/drivers/ht32f675x5_r2/ht32/register -I ../../../../../../sources/drivers/ht32f675x5_r2/ht32/hw/inc -I ../../../../../../sources/drivers/ht32f675x5_r2/ht32/hal/inc -I ../../../../../../sources/drivers/ht32f675x5_r2/ext_flash -I ../../../../../../sources/patch/ht32f675x5_patch_lib_r2/patch_ble -I ../../../../../../sources/patch/ht32f675x5_patch_lib_r2/patch_ble/interface -I ../../../../../../sources/patch/ht32f675x5_patch_lib_r2/patch_ble/llc -I ../../../../../../sources/patch/ht32f675x5_patch_lib_r2/patch_ble/stack -I ../../../../../../sources/patch/ht32f675x5_patch_lib_r2/patch_hw/inc -I ../../../../../../sources/boards -I ../../../../../../sources/components/ht32f675x5_r2/app_debug -I ../../../../../../sources/components/ht32f675x5_r2/mlog -I ../../../../../../sources/components/ht32f675x5_r2/err_debug -I ../../../../../../sources/components/ht32f675x5_r2/app_timer -I ../../../../../../sources/components/ht32f675x5_r2/crc -I ../../../../../../sources/components/ht32f675x5_r2/lpwr_ctrl -I ../../../../../../sources/components/ht32f675x5_r2/rand -I ../../../../../../sources/components/ht32f675x5_r2/rom_callback -I ../../../../../../sources/components/ht32f675x5_r2/utility -I ../../../../../../sources/mem_cfg -I ../../../../../../sources/projects_source/ble_examples/ble_peripheral/ht32f675x5_r2/ble/ble_event -I ../../../../../../sources/projects_source/ble_examples/ble_peripheral/ht32f675x5_r2/ble/ble_mem_manage -I ../../../../../../sources/projects_source/ble_examples/ble_peripheral/ht32f675x5_r2/ble/ble_peripheral -I ../../../../../../sources/projects_source/ble_examples/ble_peripheral/ht32f675x5_r2/rtos/ble_task -I ../../config -I ./RTE/_ble_peripheral_cp -I ../cp -D__UVISION_VERSION="543" -DARMCM0P -D_RTE_ -D__CO_PROCESSOR -DHT32F67595_EVB-o ./objects/system_armcm0plus.o -MMD)
 I (..\..\..\..\..\..\sources\device\ht32f675x5\Include\ARMCM0plus.h)(0x6AA13CF8)
 I (..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\Include\core_cm0plus.h)(0x6AA13CFC)
@@ -448,7 +448,7 @@ I (..\..\..\..\..\..\sources\ble5.1\ht32f675x5_r2\ble_stack\interface\controller
 I (..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x6AA13CFC)
 I (..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x6AA13CFE)
 I (..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x6AA13CFC)
-I (RTE\_ble_peripheral_cp\RTE_Components.h)(0x6AA14295)
+I (RTE\_ble_peripheral_cp\RTE_Components.h)(0x6AB6386B)
 I (..\..\..\..\..\..\sources\device\ht32f675x5\Include\ARMCM0plus.h)(0x6AA13CF8)
 I (..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\Include\core_cm0plus.h)(0x6AA13CFC)
 I (..\..\..\..\..\..\sources\device\ht32f675x5\Include\system_ARMCM0plus.h)(0x6AA13CF8)
@@ -468,7 +468,7 @@ I (..\..\..\..\..\..\sources\components\ht32f675x5_r2\app_timer\app_timer.h)(0x6
 I (..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x6AA13CFC)
 I (..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x6AA13CFE)
 I (..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x6AA13CFC)
-I (RTE\_ble_peripheral_cp\RTE_Components.h)(0x6AA14295)
+I (RTE\_ble_peripheral_cp\RTE_Components.h)(0x6AB6386B)
 I (..\..\..\..\..\..\sources\device\ht32f675x5\Include\ARMCM0plus.h)(0x6AA13CF8)
 I (..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\Include\core_cm0plus.h)(0x6AA13CFC)
 I (..\..\..\..\..\..\sources\device\ht32f675x5\Include\system_ARMCM0plus.h)(0x6AA13CF8)
@@ -597,7 +597,7 @@ F (..\..\..\..\..\..\sources\projects_source\ble_examples\ble_peripheral\ht32f67
 I (..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x6AA13CFC)
 I (..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x6AA13CFE)
 I (..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x6AA13CFC)
-I (RTE\_ble_peripheral_cp\RTE_Components.h)(0x6AA14295)
+I (RTE\_ble_peripheral_cp\RTE_Components.h)(0x6AB6386B)
 I (..\..\..\..\..\..\sources\device\ht32f675x5\Include\ARMCM0plus.h)(0x6AA13CF8)
 I (..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\Include\core_cm0plus.h)(0x6AA13CFC)
 I (..\..\..\..\..\..\sources\device\ht32f675x5\Include\system_ARMCM0plus.h)(0x6AA13CF8)
@@ -649,7 +649,7 @@ I (..\..\..\..\..\..\sources\drivers\ht32f675x5_r2\ht32\hw\inc\hw_trng.h)(0x6AA1
 I (..\..\..\..\..\..\sources\drivers\ht32f675x5_r2\ht32\hal\inc\hal_pmu.h)(0x6AA13CF8)
 I (..\..\..\..\..\..\sources\drivers\ht32f675x5_r2\ht32\hal\inc\hal_rf.h)(0x6AA13CF8)
 I (..\..\..\..\..\..\sources\ble5.1\ht32f675x5_r2\ble_init\ble_init.h)(0x6AA13CF6)
-I (..\..\..\..\..\..\sources\projects_source\ble_examples\ble_peripheral\ht32f675x5_r2\ble\ble_event\ble_event.h)(0x6AB20A06)
+I (..\..\..\..\..\..\sources\projects_source\ble_examples\ble_peripheral\ht32f675x5_r2\ble\ble_event\ble_event.h)(0x6AB27F7C)
 I (..\..\..\..\..\..\sources\ble5.1\ht32f675x5_r2\ble_services\ble_gap\ble_gap_service.h)(0x6AA13CF6)
 I (..\..\..\..\..\..\sources\ble5.1\ht32f675x5_r2\ble_services\ble_dis\ble_dis.h)(0x6AA13CF6)
 I (..\..\config\app_cfg.h)(0x6AACFD45)
@@ -663,7 +663,7 @@ I (..\..\..\..\..\..\sources\components\ht32f675x5_r2\app_timer\app_timer.h)(0x6
 I (..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x6AA13CFC)
 I (..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\RTX\Source\rtx_lib.h)(0x6AA13CFE)
 I (..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\RTX\Source\rtx_core_c.h)(0x6AA13CFC)
-I (RTE\_ble_peripheral_cp\RTE_Components.h)(0x6AA14295)
+I (RTE\_ble_peripheral_cp\RTE_Components.h)(0x6AB6386B)
 I (..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\RTX\Source\rtx_core_cm.h)(0x6AA13CFC)
 I (..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\Include\os_tick.h)(0x6AA13CFC)
 I (..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\RTX\Config\RTX_Config.h)(0x6AA13CFC)
@@ -698,6 +698,6 @@ I (..\..\..\..\..\..\third_party\CMSIS\5.7.0\CMSIS\RTOS2\Include\cmsis_os2.h)(0x
 I (..\..\..\..\..\..\sources\ble5.1\ht32f675x5_r2\ble_stack\stack\host_stack\gatt_service_api.h)(0x6AA13CF8)
 I (..\..\..\..\..\..\sources\patch\ht32f675x5_patch_lib_r2\patch_ble\stack\patch_gatt_service_api.h)(0x6AA13CFA)
 I (..\..\..\..\..\..\sources\components\ht32f675x5_r2\utility\type_def.h)(0x6AA13CF8)
-I (..\..\..\..\..\..\sources\projects_source\ble_examples\ble_peripheral\ht32f675x5_r2\ble\ble_event\ble_event.h)(0x6AB20A06)
+I (..\..\..\..\..\..\sources\projects_source\ble_examples\ble_peripheral\ht32f675x5_r2\ble\ble_event\ble_event.h)(0x6AB27F7C)
 I (..\..\..\..\..\..\sources\ble5.1\ht32f675x5_r2\ble_stack\stack\host_stack\gap_api.h)(0x6AA13CF8)
 F (.\ble_trx_service_integrated.h)(0x6AB20551)()
